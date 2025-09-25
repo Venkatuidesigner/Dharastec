@@ -8,14 +8,14 @@
         cursor: pointer;
 
         &:hover {
-            background-color: #2bb359;
+            background-color: #000000;
             color: #ffffff !important;
             transition: all 0.25s;
             border-radius: 3px;
         }
 
         &:last-child {
-            background-color: #2bb359;
+            background-color: #000000;
             color: #ffffff !important;
             transition: all 0.25s;
             border-radius: 3px;
@@ -25,7 +25,7 @@
             }
         }
         &.active {
-            color: #2bb359;
+            color: #000000;
         }
     }
 }

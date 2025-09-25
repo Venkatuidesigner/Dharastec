@@ -1,0 +1,1 @@
+export const dummy_img = '../../../images/1.jpg';
