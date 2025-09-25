@@ -1,0 +1,44 @@
+<div class="w-full shadow-md bg-white fixed top-0 left-0 z-50" id="header">
+  <!-- Top Bar -->
+  <div
+    class="h-10 flex items-center justify-center px-2 sm:px-4 text-xs sm:text-sm md:text-base text-white bg-gradient-to-r from-green-800 via-green-600 to-green-800">
+    <mat-icon class="mr-1 sm:mr-2 text-white animate-pulse text-sm sm:text-base">location_on</mat-icon>
+    <span class="font-semibold tracking-wide text-center">Your Trusted Property Partner</span>
+    <mat-icon class="ml-1 sm:ml-2 text-white hidden md:inline animate-pulse text-sm sm:text-base">support_agent</mat-icon>
+  </div>
+
+  <!-- Header -->
+  <header class="container mx-auto flex items-center justify-between p-3 relative">
+    <!-- Logo -->
+    <a routerLink="/" class="flex items-center">
+      <img src="" class="w-40 sm:w-48 md:w-56 lg:w-64 h-auto" alt="Dharstec Solutions Logo">Dharstec Solutions
+    </a>
+
+    <!-- Hamburger Button -->
+    <button
+      class="inline-flex p-2 text-gray-700 rounded-lg lg:hidden hover:bg-gray-200 focus:outline-none"
+      (click)="mobileMenuOpen = !mobileMenuOpen">
+      <mat-icon>{{ mobileMenuOpen ? 'close' : 'menu' }}</mat-icon>
+    </button>
+
+    <!-- Desktop Menu -->
+    <nav class="hidden lg:flex lg:items-center lg:space-x-6 navitems">
+      <a routerLink="/home" routerLinkActive="active">Home</a>
+      <a routerLink="/about" routerLinkActive="active">About Us</a>
+      <a routerLink="/about" routerLinkActive="active">Services</a>
+      <a routerLink="/about" routerLinkActive="active">Properties</a>
+      <a routerLink="/about" routerLinkActive="active">Blog</a>
+      <a routerLink="/about" routerLinkActive="active">Contact Us</a>
+    </nav>
+  </header>
+
+  <!-- Mobile Overlay Menu -->
+  <div
+    class="absolute top-full left-0 w-full bg-white text-gray-800 shadow-lg transition-all duration-300 ease-in-out lg:hidden"
+    [ngClass]="{ 'block': mobileMenuOpen, 'hidden': !mobileMenuOpen }">
+    <nav class="flex flex-col p-4 space-y-3 text-base font-medium">
+      <a routerLink="/home" (click)="mobileMenuOpen=false" class="hover:text-green-700">Home</a>
+      <a routerLink="/about" (click)="mobileMenuOpen=false" class="hover:text-green-700">About Us</a>
+    </nav>
+  </div>
+</div>
