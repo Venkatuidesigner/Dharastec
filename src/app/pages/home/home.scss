@@ -1,0 +1,20 @@
+@reference "tailwindcss";
+
+.our-services div.card {
+    @apply p-8 bg-white rounded-2xl shadow-2xl text-left;
+
+    div.card-details {
+        @apply min-h-[250px] border-b border-b-gray-200 ;
+
+        img {
+            @apply rounded-lg w-20 h-16;
+        }
+    }
+        div.icon {
+        @apply rounded-full mt-4 float-end;
+        img {
+            @apply rounded-full w-12 h-12;
+        }
+    }
+
+}

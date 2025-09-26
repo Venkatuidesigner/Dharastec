@@ -1,3 +1,4 @@
+<!-- ✦✦✦✦✦✦✦✦✦ SECTION: HERO START ✦✦✦✦✦✦✦✦✦ -->
 <section class="bg-gradient-to-r from-red-500 via-red-500 to-black text-white py-32 px-6" style="background: linear-gradient(to right, rgb(38, 38, 73) 30%, black 30%);">
   <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
     <div>
@@ -16,8 +17,9 @@
     </div>
   </div>
 </section>
+<!-- ✦✦✦✦✦✦✦✦✦ SECTION: HERO START ✦✦✦✦✦✦✦✦✦ -->
 
-
+<!-- ✦✦✦✦✦✦✦✦✦ SECTION: Where Technology Meets Trust START ✦✦✦✦✦✦✦✦✦ -->
 <section class="py-32 px-6 bg-[#F3F0F0]">
   <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
      <div class="flex justify-center rounded-lg">
@@ -31,7 +33,7 @@
       <p class="mt-4 text-lg text-gray-800">
        At Dharstec, we turn big ideas into powerful digital solutions. With over 10 years of industry experience, we specialize in crafting custom web and app development, scalable IT infrastructure, and user-first designs that help businesses grow faster.
       </p>
-      <ul class="list-disc pl-4 mt-4">
+      <ul class="list-disc leading-loose pl-4 mt-4">
         <li>Driven by Code. Powered by Passion.</li>
         <li>10+ Years of Building What Matters.</li>
         <li>Innovating IT, One Solution at a Time.</li>
@@ -42,9 +44,10 @@
    
   </div>
 </section>
+<!-- ✦✦✦✦✦✦✦✦✦ SECTION: Where Technology Meets Trust End ✦✦✦✦✦✦✦✦✦ -->
 
-
-<section class="py-16 text-center">
+<!-- ✦✦✦✦✦✦✦✦✦ SECTION: Our Clients START ✦✦✦✦✦✦✦✦✦ -->
+<section class="py-16 text-center bg-white">
 
   <h2 class="text-2xl font-bold mb-10">Our Clients</h2>
   <div class="max-w-7xl mx-auto grid md:grid-cols-5 gap-10">
@@ -65,35 +68,29 @@
     </div>
   </div>
 </section>
+<!-- ✦✦✦✦✦✦✦✦✦ SECTION: Our Clients End ✦✦✦✦✦✦✦✦✦ -->
 
 
+<!-- ✦✦✦✦✦✦✦✦✦ SECTION: We Offer Best IT Services START ✦✦✦✦✦✦✦✦✦ -->
 <section class="bg-gray-50 py-20">
-  <div class="container mx-auto text-center">
+  <div class="max-w-7xl mx-auto text-center">
+     <p class=" tracking-wide mb-2 font-semibold text-md">We Offer Best IT Services</p>
     <h2 class="text-3xl font-bold">Easy Solution for Difficult IT Problems</h2>
-    <div class="mt-10 grid gap-6 md:grid-cols-4">
-      <mat-card class="p-6">
-        <mat-icon class="text-5xl text-indigo-600">build</mat-icon>
-        <h3 class="mt-4 font-semibold text-lg">IT Services</h3>
-        <p class="mt-2 text-sm text-gray-600">Complete IT solutions for your business.</p>
-      </mat-card>
-
-      <mat-card class="p-6">
-        <mat-icon class="text-5xl text-indigo-600">category</mat-icon>
-        <h3 class="mt-4 font-semibold text-lg">Product Development</h3>
-        <p class="mt-2 text-sm text-gray-600">Custom-built products to scale your growth.</p>
-      </mat-card>
-
-      <mat-card class="p-6">
-        <mat-icon class="text-5xl text-indigo-600">brush</mat-icon>
-        <h3 class="mt-4 font-semibold text-lg">Creative Designing</h3>
-        <p class="mt-2 text-sm text-gray-600">Design that matches your brand identity.</p>
-      </mat-card>
-
-      <mat-card class="p-6">
-        <mat-icon class="text-5xl text-indigo-600">groups</mat-icon>
-        <h3 class="mt-4 font-semibold text-lg">Flexible Engagement</h3>
-        <p class="mt-2 text-sm text-gray-600">Flexible collaboration models for success.</p>
-      </mat-card>
+    <div class="mt-10 grid gap-8 md:grid-cols-4 our-services">
+      @for (item of ourServices; track $index) {
+      <div class="card">
+        <div class="card-details">
+           <img src="{{item.img}}" alt="">
+            <h3 class="mt-4 font-semibold text-lg">{{item.title}}</h3>
+            <p class="mt-2 text-sm text-gray-600">{{item.descrption}}</p>
+        </div>
+         <div class="icon">
+           <img src="{{item.img}}" alt="">
+         </div>
+      </div>
+      }
     </div>
   </div>
 </section>
+
+<!-- ✦✦✦✦✦✦✦✦✦ SECTION: We Offer Best IT Services END ✦✦✦✦✦✦✦✦✦ -->
