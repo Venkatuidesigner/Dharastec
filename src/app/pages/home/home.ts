@@ -21,12 +21,12 @@ export class Home {
   ]
 
   features = [
-    { title: 'Custom IT Solutions', desc: 'Tailored strategies and systems built around your unique business needs.', icon: 'fa-network-wired', class:'bg-red-100' },
-    { title: 'End-to-End Support', desc: 'From ideation to post-launch — we stay with you through every phase.', icon: 'fa-ticket', class:'bg-gray-200' },
-    { title: 'Faster Delivery', desc: 'Agile methods and optimized workflows mean quicker time to market.', icon: 'fa-globe', class:'bg-orange-100' },
-    { title: 'Scalable Technology', desc: 'Solutions designed to grow with your business and evolving goals.', icon: 'fa-server', class:'bg-green-200' },
-    { title: 'Transparent Communication', desc: 'We keep you informed and involved at every step — no guesswork.', icon: 'fa-comments', class:'bg-pink-100' },
-    { title: 'Client-First Approach', desc: 'We align our process with your success metrics — not just deliverables.', icon: 'fa-users', class:'bg-wilet-100' },
+    { title: 'Custom IT Solutions', desc: 'Tailored strategies and systems built around your unique business needs.', icon: 'fa-network-wired', class:'!bg-red-100' },
+    { title: 'End-to-End Support', desc: 'From ideation to post-launch — we stay with you through every phase.', icon: 'fa-ticket', class:'!bg-gray-200' },
+    { title: 'Faster Delivery', desc: 'Agile methods and optimized workflows mean quicker time to market.', icon: 'fa-globe', class:'!bg-orange-100' },
+    { title: 'Scalable Technology', desc: 'Solutions designed to grow with your business and evolving goals.', icon: 'fa-server', class:'!bg-sky-100' },
+    { title: 'Transparent Communication', desc: 'We keep you informed and involved at every step — no guesswork.', icon: 'fa-comments', class:'!bg-pink-100' },
+    { title: 'Client-First Approach', desc: 'We align our process with your success metrics — not just deliverables.', icon: 'fa-users', class:'!bg-cyan-100' },
   ];
 
   testimonials = [

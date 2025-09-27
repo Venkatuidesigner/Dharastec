@@ -8,6 +8,10 @@
 */
 @use '@angular/material' as mat;
 @use "tailwindcss";
+
+* {
+   font-family: 'Inter', sans-serif;
+}
 html {
   @include mat.theme((
     color: (
