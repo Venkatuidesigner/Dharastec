@@ -1,24 +1,22 @@
-<footer class="bg-gray-900 text-gray-300 py-12 px-6">
-  <div class="container mx-auto grid md:grid-cols-4 gap-10">
+<footer class="bg-[#000000] text-gray-300 text-white text-semibold py-12 px-6">
+  <div class="max-w-7xl mx-auto grid md:grid-cols-13 gap-10">
 
     <!-- Logo + About -->
-    <div>
+    <div class="md:col-span-5">
       <h2 class="text-xl font-bold text-white">Dharaste Solutions Pvt Ltd</h2>
       <p class="mt-4 text-sm">
         Empowering businesses with smart, scalable, and growth-ready IT solutions.
       </p>
-      <div class="mt-6 flex">
-        <input type="email"
-          placeholder="Subscribe"
-          class="flex-1 px-4 py-2 rounded-l bg-gray-800 border border-gray-700 text-sm focus:outline-none focus:ring-2 focus:ring-primary" />
-        <button class="px-4 py-2 bg-primary text-white rounded-r hover:bg-primary-dark">
-          <mat-icon>send</mat-icon>
+      <div class="mt-6">
+        <input type="email" class="w-full px-4 py-2 rounded-2xl bg-white border border-gray-700 text-sm outline-none" />
+        <button class="px-4 py-2 bg-white text-black rounded-lg mt-2 cursor-pointer">
+          Subscribe
         </button>
       </div>
     </div>
 
     <!-- Quick Links -->
-    <div>
+    <div class="md:col-span-2">
       <h3 class="text-lg font-semibold text-white">Quick Links</h3>
       <ul class="mt-4 space-y-2 text-sm">
         <li><a routerLink="/" class="hover:text-white">About</a></li>
@@ -28,8 +26,19 @@
       </ul>
     </div>
 
+    <!-- About -->
+    <div class="md:col-span-2">
+      <h3 class="text-lg font-semibold text-white">About</h3>
+      <ul class="mt-4 space-y-2 text-sm">
+        <li><a routerLink="/" class="hover:text-white">About</a></li>
+        <li><a routerLink="/services" class="hover:text-white">Services</a></li>
+        <li><a routerLink="/portfolio" class="hover:text-white">Portfolio</a></li>
+        <li><a routerLink="/contact" class="hover:text-white">Contact</a></li>
+      </ul>
+    </div>
+
     <!-- Services -->
-    <div>
+    <div class="md:col-span-2">
       <h3 class="text-lg font-semibold text-white">Services</h3>
       <ul class="mt-4 space-y-2 text-sm">
         <li><a href="#" class="hover:text-white">IT Consulting</a></li>
@@ -40,26 +49,45 @@
     </div>
 
     <!-- Contact Info -->
-    <div>
+    <div class="md:col-span-2">
       <h3 class="text-lg font-semibold text-white">Get in Touch</h3>
       <ul class="mt-4 space-y-3 text-sm">
-        <li><mat-icon class="text-primary mr-2">location_on</mat-icon> Chennai, India</li>
-        <li><mat-icon class="text-primary mr-2">phone</mat-icon> +91 98765 43210</li>
-        <li><mat-icon class="text-primary mr-2">email</mat-icon> info@dharaste.com</li>
+        <li>Chennai, India</li>
+        <li>+91 98765 43210</li>
+        <li>info@dharaste.com</li>
       </ul>
-      <div class="flex gap-4 mt-6 text-gray-400">
-        <a href="#"><mat-icon>facebook</mat-icon></a>
-        <a href="#"><mat-icon>twitter</mat-icon></a>
-        <a href="#"><mat-icon>linkedin</mat-icon></a>
-        <a href="#"><mat-icon>instagram</mat-icon></a>
+    </div>
+  </div>
+
+  <!-- Policy -->
+  <div class="copyright max-w-7xl mx-auto mt-4">
+    <div class="text-center">
+      <div class="pt-2 text-center text-[15px] text-white">
+        <a class="mx-2 cursor-pointer">Cookie Policy</a>
+        <span class="inline-flex bg-white w-[8px] h-[8px] rounded-lg  cursor-pointer"></span>
+        <a class="mx-2 cursor-pointer">Privacy Policy</a>
+        <span class="inline-flex bg-white w-[8px] h-[8px] rounded-lg "></span>
+        <a class="mx-2">Terms of Conditions</a>
       </div>
     </div>
   </div>
 
   <!-- Bottom Bar -->
-  <div class="border-t border-gray-700 mt-10 pt-6 text-center text-sm text-gray-500">
-    © 2025 YourCompany. All rights reserved. |
-    <a href="#" class="hover:text-gray-300">Privacy Policy</a> |
-    <a href="#" class="hover:text-gray-300">Terms & Conditions</a>
+  <div class="copyright max-w-7xl mx-auto border-t border-gray-700 pt-6 mt-6">
+    <div class="flex justify-between">
+      <div class="pt-6 text-center text-[15px] text-white">
+        © 2025 Dharstec. All rights reserved.
+      </div>
+      <div>
+        <div class="flex gap-4 text-gray-400">
+          <a href="#" class="bg-[#E7E6F2] p-2 rounded-sm text-[#646A69]"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="bg-[#E7E6F2] p-2 rounded-sm text-[#646A69]"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" class="bg-[#E7E6F2] p-2 rounded-sm text-[#646A69]"><i class="fa-brands fa-square-instagram"></i></a>
+          <a href="#" class="bg-[#E7E6F2] p-2 rounded-sm text-[#646A69]"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" class="bg-[#E7E6F2] p-2 rounded-sm text-[#646A69]"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" class="bg-[#E7E6F2] p-2 rounded-sm text-[#646A69]"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
   </div>
 </footer>
