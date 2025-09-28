@@ -1,6 +1,6 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 import { MaterialModule } from '../../shared/material-module';
-import { dummy_img, dummy_img_1, user } from '../../shared/globals'
+import { dummy_img, dummy_img_1, user, about_us, code } from '../../shared/globals'
 import { NgFor } from '@angular/common';
 @Component({
   selector: 'app-home',
@@ -13,6 +13,8 @@ export class Home {
   dummy_img = dummy_img;
   dummy_img_1 = dummy_img_1;
   user = user;
+  about_us = about_us;
+  code = code;
   ourServices = [
     { img: dummy_img, icon: 'fa-computer', title: 'IT Services', descrption: 'End-to-end technology solutions that include development, support, and consulting to keep your business running smoothly.' },
     { img: dummy_img, icon: 'fa-mobile-screen-button', title: 'Product Development', descrption: 'From idea to launch, we build innovative digital products tailored to your business goals.' },

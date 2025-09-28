@@ -1,5 +1,5 @@
 <!-- ✦✦✦✦✦✦✦✦✦ SECTION: HERO START ✦✦✦✦✦✦✦✦✦ -->
-<section class="text-white py-8 sm:py-32 px-4 sm:px-6 lg:px-8" style="background: linear-gradient(to right, #000080 67%, #000000 67%);">
+<section class="text-white py-8 sm:py-32 px-4 sm:px-6 lg:px-8" style="background: linear-gradient(to right, #4646fc 67%, #000000 67%);">
   <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
     <div>
       <p class="text-sm tracking-wide mb-2">Empowering Digital Innovation</p>
@@ -13,7 +13,7 @@
       <button mat-raised-button color="accent" class="mt-6">Explore Our Services</button>
     </div>
     <div class="flex justify-center rounded-lg group">
-      <img [src]="dummy_img_1" class="w-full h-full rounded-xl group-hover:scale-102 transition-all duration-300">
+      <img [src]="about_us" class="w-full h-full rounded-xl group-hover:scale-102 transition-all duration-300">
     </div>
   </div>
 </section>
@@ -23,12 +23,12 @@
 <section class="py-8 sm:py-32 px-4 sm:px-6 lg:px-8 bg-[#F3F0F0]">
   <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
     <div class="flex justify-center rounded-lg">
-      <img [src]="dummy_img_1" alt="" class=" w-full h-full !rounded-xl shadow-2xl">
+      <img [src]="code" alt="" class=" w-full h-full !rounded-xl">
     </div>
     <div>
       <p class="text-sm tracking-wide mb-2">10+ Years of Experience</p>
       <h1 class="text-[48px] font-bold leading-tight">
-        Where Technology Meets Trust
+        Where <span class="text-[#4646fc]">Technology</span> Meets Trust
       </h1>
       <p class="mt-4 text-lg text-gray-800">
         At Dharstec, we turn big ideas into powerful digital solutions. With over 10 years of industry experience, we
@@ -77,19 +77,19 @@
 <section class="bg-gray-50 py-8 sm:py-20 px-4 sm:px-6 lg:px-8">
   <div class="max-w-7xl mx-auto text-center">
     <p class=" tracking-wide mb-2 font-semibold text-md">We Offer Best IT Services</p>
-    <h2 class="text-3xl font-bold">Easy Solution for Difficult IT Problems</h2>
+    <h2 class="text-3xl font-bold"><span class="text-[#4646fc]">Easy Solution</span> for Difficult IT Problems</h2>
     <div class="mt-10 grid gap-2 sm:gap-8 grid-cols-1 md:grid-cols-4 our-services">
       @for (item of ourServices; track $index) {
       <div
         class="card group relative bg-white rounded-2xl border border-gray-200 hover:border-gray-100 hover:!shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
         <div class="card-details">
           <div class="w-20 h-20 group-hover:scale-110 transition-transform duration-300"><i
-              class="fa-solid {{item.icon}} text-4xl py-4 group-hover:text-red-500"></i></div>
-          <h3 class="font-semibold text-lg">{{item.title}}</h3>
+              class="fa-solid {{item.icon}} text-4xl py-4 group-hover:text-[#4646fc]"></i></div>
+          <h3 class="font-semibold text-lg group-hover:text-[#4646fc]">{{item.title}}</h3>
           <p class="mt-2 text-sm text-gray-600">{{item.descrption}}</p>
         </div>
-        <div class="icon bg-gray-300 p-2 cursor-pointer">
-         <i class="fa-solid fa-arrow-right"></i>
+        <div class="icon bg-gray-300 p-2 cursor-pointer group-hover:bg-[#4646fc] transform duration-300">
+         <i class="fa-solid fa-arrow-right group-hover:text-[#ffffff]"></i>
         </div>
       </div>
       }
@@ -104,7 +104,7 @@
   <div class="max-w-7xl mx-auto ">
     <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-8">
       <div>
-        <h1 class="text-4xl font-bold mb-2">We Make Digital Work Better — For You</h1>
+        <h1 class="text-4xl font-bold mb-2">We Make <span class="text-[#4646fc]">Digital Work</span> Better — For You</h1>
         <p class="text-gray-600 max-w-2xl">
           At Dharstec, we believe great technology should make life easier — not more complicated. That's why we design
           and develop solutions that are intuitive, inclusive, and built for real people.
@@ -178,7 +178,7 @@
   <div class="max-w-7xl mx-auto">
     <div class="text-center w-full mx-auto">
       <h2 class="text-2xl md:text-3xl font-bold mb-4">
-        Your Tech Partner, Not Just a Vendor
+        Your <span class="text-[#4646fc]">Tech Partner</span>, Not Just a Vendor
       </h2>
       <p class="text-gray-600 dark:text-gray-300 max-w-4xl mx-auto">
         Our focus isn’t just delivering a project; it’s building long-term solutions that evolve
@@ -193,11 +193,11 @@
           <div class="flex justify-center items-center">
             <div
               class="rounded-full flex justify-center items-center bg-[#ffffff] bg-opacity-[25%] text-black !shadow-2xl mr-4 w-[65px] h-[65px]">
-              <i class="fa-solid {{feature.icon}} text-2xl group-hover:text-red-500"></i>
+              <i class="fa-solid {{feature.icon}} text-2xl group-hover:text-[#4646fc]"></i>
             </div>
           </div>
           <div>
-            <h3 class="font-semibold text-xl group-hover:text-[#000280] transition-colors">{{ feature.title }}</h3>
+            <h3 class="font-semibold text-xl group-hover:text-[#4646fc] transition-colors">{{ feature.title }}</h3>
             <p class="text-gray-600 dark:text-gray-300 mt-2">{{ feature.desc }}</p>
           </div>
         </div>
@@ -210,7 +210,7 @@
 <!-- ✦✦✦✦✦✦✦✦✦ SECTION: Your Tech Partner, Not Just a Vendor END ✦✦✦✦✦✦✦✦✦ -->
 
 <!-- ✦✦✦✦✦✦✦✦✦ SECTION: Easy Solution for Difficult IT Problems START ✦✦✦✦✦✦✦✦✦ -->
-<section class="py-20 px-4 sm:px-6 lg:px-8 text-center text-white bg-[#000080]">
+<section class="py-20 px-4 sm:px-6 lg:px-8 text-center text-white bg-[#4646fc]">
   <h2 class="text-2xl md:text-3xl font-bold mb-6">
     Easy Solution for Difficult IT Problems
   </h2>
@@ -315,9 +315,9 @@
         </div>
         <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
 
-        <div class="absolute bottom-0 left-0 p-6 text-black z-10">
+        <div class="absolute bottom-0 left-0 p-6 text-white z-10">
           <h2 class="text-2xl font-semibold">Chaandi Jewelery</h2>
-          <p class="text-gray-800 mt-3">Secure, scalable cloud solutions and automation pipelines for modern
+          <p class="text-white mt-3">Secure, scalable cloud solutions and automation pipelines for modern
             infrastructure.
           </p>
         </div>
@@ -328,9 +328,9 @@
         </div>
         <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
 
-        <div class="absolute bottom-0 left-0 p-6 text-black z-10">
+        <div class="absolute bottom-0 left-0 p-6 text-white z-10">
           <h2 class="text-2xl font-semibold">Chaandi Jewelery</h2>
-          <p class="text-gray-800 mt-3">Secure, scalable cloud solutions and automation pipelines for modern
+          <p class="text-white mt-3">Secure, scalable cloud solutions and automation pipelines for modern
             infrastructure.
           </p>
         </div>
@@ -341,9 +341,9 @@
         </div>
         <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
 
-        <div class="absolute bottom-0 left-0 p-6 text-black z-10">
+        <div class="absolute bottom-0 left-0 p-6 text-white z-10">
           <h2 class="text-2xl font-semibold">Chaandi Jewelery</h2>
-          <p class="text-gray-800 mt-3">Secure, scalable cloud solutions and automation pipelines for modern
+          <p class="text-white mt-3">Secure, scalable cloud solutions and automation pipelines for modern
             infrastructure.
           </p>
         </div>

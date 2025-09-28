@@ -2,16 +2,19 @@
     a {
         font-size: 16px;
         text-transform: capitalize;
-        line-height: 32px;
-        padding: 6px 16px;
+        padding: 3px 8px;
         color: #000000;
         cursor: pointer;
+        font-weight: 500;
 
         &:hover {
-            background-color: #000000;
-            color: #ffffff !important;
+            color: #4646fc !important;
             transition: all 0.25s;
             border-radius: 3px;
+        }
+        &.active {
+            color: #4646fc !important;
+            transition: all 0.25s;
         }
 
         &:last-child {
@@ -19,6 +22,7 @@
             color: #ffffff !important;
             transition: all 0.25s;
             border-radius: 3px;
+             padding: 10px 8px !important;
 
             &:hover {
                 opacity: .7;

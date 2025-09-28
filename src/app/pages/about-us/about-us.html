@@ -1,1 +1,72 @@
-<p>about-us works!</p>
+<!-- ✦✦✦✦✦✦✦✦✦ SECTION: HERO START ✦✦✦✦✦✦✦✦✦ -->
+<section class="text-white py-8 sm:py-32 px-4 sm:px-6 lg:px-8 bg-[#4646fc]">
+  <div class="max-w-4xl mx-auto grid text-center gap-10 items-center justify-center">
+    <div>
+      <h1 class="text-[48px] font-bold leading-tight">
+        About Us
+      </h1>
+      <p class="mt-4 text-lg text-gray-200">
+       We’re a technology-first company with a passion for solving real-world problems through smart digital solutions. From startups to enterprises, we help brands transform, scale, and thrive.
+      </p>
+    </div>
+  </div>
+</section>
+<!-- ✦✦✦✦✦✦✦✦✦ SECTION: HERO START ✦✦✦✦✦✦✦✦✦ -->
+
+
+<!-- ✦✦✦✦✦✦✦✦✦ SECTION: Where Technology Meets Trust START ✦✦✦✦✦✦✦✦✦ -->
+<section class="py-8 sm:py-32 px-4 sm:px-6 lg:px-8 bg-[#F3F0F0]">
+  <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+    <div class="flex justify-center rounded-lg">
+      <img [src]="code" alt="" class=" w-full h-full !rounded-xl">
+    </div>
+    <div>
+      <p class="text-sm tracking-wide mb-2">10+ Years of Experience</p>
+      <h1 class="text-[48px] font-bold leading-tight">
+        Where <span class="text-[#4646fc]">Technology</span> Meets Trust
+      </h1>
+      <p class="mt-4 text-lg text-gray-800">
+        At Dharstec, we turn big ideas into powerful digital solutions. With over 10 years of industry experience, we
+        specialize in crafting custom web and app development, scalable IT infrastructure, and user-first designs that
+        help businesses grow faster.
+      </p>
+      <ul class="list-disc leading-loose pl-4 mt-4">
+        <li>Driven by Code. Powered by Passion.</li>
+        <li>10+ Years of Building What Matters.</li>
+        <li>Innovating IT, One Solution at a Time.</li>
+        <li>Where Technology Meets Trust.</li>
+        <li>We Build Digital. We Build Better.</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+<!-- ✦✦✦✦✦✦✦✦✦ SECTION: Where Technology Meets Trust End ✦✦✦✦✦✦✦✦✦ -->
+
+
+
+<!-- ✦✦✦✦✦✦✦✦✦ SECTION: We Offer Best IT Services START ✦✦✦✦✦✦✦✦✦ -->
+<section class="bg-gray-50 py-8 sm:py-20 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-7xl mx-auto text-center">
+    <p class=" tracking-wide mb-2 font-semibold text-md">We Offer Best IT Services</p>
+    <h2 class="text-3xl font-bold"><span class="text-[#4646fc]">Easy Solution</span> for Difficult IT Problems</h2>
+    <div class="mt-10 grid gap-2 sm:gap-8 grid-cols-1 md:grid-cols-4 our-services">
+      @for (item of ourServices; track $index) {
+      <div
+        class="card group relative bg-white rounded-2xl border border-gray-200 hover:border-gray-100 hover:!shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+        <div class="card-details">
+          <div class="w-20 h-20 group-hover:scale-110 transition-transform duration-300"><i
+              class="fa-solid {{item.icon}} text-4xl py-4 group-hover:text-[#4646fc]"></i></div>
+          <h3 class="font-semibold text-lg group-hover:text-[#4646fc]">{{item.title}}</h3>
+          <p class="mt-2 text-sm text-gray-600">{{item.descrption}}</p>
+        </div>
+        <div class="icon bg-gray-300 p-2 cursor-pointer group-hover:bg-[#4646fc] transform duration-300">
+         <i class="fa-solid fa-arrow-right group-hover:text-[#ffffff]"></i>
+        </div>
+      </div>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- ✦✦✦✦✦✦✦✦✦ SECTION: We Offer Best IT Services END ✦✦✦✦✦✦✦✦✦ -->
