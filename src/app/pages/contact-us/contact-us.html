@@ -13,3 +13,79 @@
   </div>
 </section>
 <!-- ✦✦✦✦✦✦✦✦✦ SECTION: HERO START ✦✦✦✦✦✦✦✦✦ -->
+
+<!-- ✦✦✦✦✦✦✦✦✦ SECTION: We Offer Best IT Services START ✦✦✦✦✦✦✦✦✦ -->
+<section class="bg-gray-50 py-8 sm:py-20 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-7xl mx-auto text-center">
+    <!-- <p class=" tracking-wide mb-2 font-semibold text-md">We Offer Best IT Services</p> -->
+    <h2 class="text-[24px] sm:text-3xl font-bold"><span class="text-[#4646fc]">Reach Us</span> Directly
+      Problems</h2>
+      <p class="max-w-2xl mx-auto">Whether you prefer a call, email, or in-person visit — we’re here to assist you. Feel free to reach out through any of the options below.</p>
+    <div class="mt-10 grid gap-2 sm:gap-8 grid-cols-1 md:grid-cols-4 our-services without-icon-brder">
+      @for (item of ourServices; track $index) {
+      <div
+        class="card group relative bg-white !text-center rounded-2xl border border-gray-200 hover:border-gray-100 hover:!shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+        <div class="card-details">
+          <div class="w-20 h-20  group-hover:scale-110 transition-transform duration-300 w-full"><i
+              class="fa-solid {{item.icon}} text-4xl py-4 group-hover:text-[#4646fc]"></i></div>
+          <h3 class="font-semibold text-lg group-hover:text-[#4646fc]">{{item.title}}</h3>
+          <p class="mt-2 text-sm text-gray-600">{{item.descrption}}</p>
+        </div>
+      </div>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- ✦✦✦✦✦✦✦✦✦ SECTION: We Offer Best IT Services END ✦✦✦✦✦✦✦✦✦ -->
+
+<!-- ✦✦✦✦✦✦✦✦✦ SECTION: Contact Form START ✦✦✦✦✦✦✦✦✦ -->
+<section class="py-12 px-4 sm:px-6 lg:px-8 md:px-20 bg-white">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 sm:grid-cols-2 flex justify-center items-center">
+      <div class="p-5">
+        <h3 class="font-semibold text-lg sm:text-3xl mb-4">Send Us a Message</h3>
+        <p>Have some suggestions or just want to say hi? Message us</p>
+        <img [src]="dummy_img" alt="" class="mt-5 h-[380px] rounded-2xl">
+      </div>
+      <div>
+          <div class="bg-[#E4DBDB] rounded-lg p-10 max-w-[400px] mx-auto">
+                    <h3 class="font-semibold text-2xl text-center mb-4">Get in Touch With Us</h3>
+        <div class="contact-form grid grid-cols-10 gap-4">
+          <div class="input col-span-10 mt-4">
+            <input type="text" class="bg-[#FFFBFB] w-full p-3 rounded-lg outline-none">
+          </div>
+          <div class="input col-span-5 mt-3">
+            <input type="text" class="bg-[#FFFBFB] w-full p-3 rounded-lg outline-none">
+          </div>
+          <div class="input col-span-5 mt-3">
+            <input type="text" class="bg-[#FFFBFB] w-full p-3 rounded-lg outline-none">
+          </div>
+          <div class="input col-span-5 mt-3">
+            <input type="text" class="bg-[#FFFBFB] w-full p-3 rounded-lg outline-none">
+          </div>
+          <div class="input col-span-5 mt-3">
+            <input type="text" class="bg-[#FFFBFB] w-full p-3 rounded-lg outline-none">
+          </div>
+          <div class="input col-span-10 mt-3">
+            <input type="text" class="bg-[#FFFBFB] w-full p-3 rounded-lg outline-none">
+          </div>
+          <div class="input col-span-10 text-center mt-2">
+            <button
+              class="w-[250px] text-center bg-black hover:bg-opacity-[60%] p-3 text-white rounded-lg cursor-pointer">SUBMIT</button>
+          </div>
+        </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ✦✦✦✦✦✦✦✦✦ SECTION: Contact Form END ✦✦✦✦✦✦✦✦✦ -->
+
+<!-- ✦✦✦✦✦✦✦✦✦ SECTION: Map START ✦✦✦✦✦✦✦✦✦ -->
+<section class="">
+  <div class="mx-auto relative">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m11!1m3!1d243.10337708399317!2d80.1949267014217!3d12.971714524410864!2m2!1f10.388643266467778!2f45!3m2!1i1024!2i768!4f35!3m3!1m2!1s0x3a525d0e7f13cebf%3A0xd952d46736398395!2sDharstec%20Solutions!5e1!3m2!1sen!2sin!4v1760194378681!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</section>
+<!-- ✦✦✦✦✦✦✦✦✦ SECTION: Map END ✦✦✦✦✦✦✦✦✦ -->
