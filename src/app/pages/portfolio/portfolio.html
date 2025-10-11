@@ -13,3 +13,73 @@
   </div>
 </section>
 <!-- ✦✦✦✦✦✦✦✦✦ SECTION: HERO START ✦✦✦✦✦✦✦✦✦ -->
+
+
+
+<!-- ✦✦✦✦✦✦✦✦✦ SECTION: We Offer Best IT Services START ✦✦✦✦✦✦✦✦✦ -->
+<section class="bg-gray-50 py-8 sm:py-20 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-7xl mx-auto text-center">
+    <p class=" tracking-wide mb-2 font-semibold text-md">We Offer Best IT Services</p>
+    <h2 class="text-[24px] sm:text-3xl font-bold"><span class="text-[#4646fc]">Easy Solution</span> for Difficult IT
+      Problems</h2>
+    <div class="mt-10 grid gap-2 sm:gap-8 grid-cols-1 md:grid-cols-4 our-services">
+      @for (item of ourServices; track $index) {
+      <div
+        class="card group relative bg-white rounded-2xl border border-gray-200 hover:border-gray-100 hover:!shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+        <div class="card-details">
+          <div class="w-20 h-20 group-hover:scale-110 transition-transform duration-300"><i
+              class="fa-solid {{item.icon}} text-4xl py-4 group-hover:text-[#4646fc]"></i></div>
+          <h3 class="font-semibold text-lg group-hover:text-[#4646fc]">{{item.title}}</h3>
+          <p class="mt-2 text-sm text-gray-600">{{item.descrption}}</p>
+        </div>
+        <div class="icon bg-gray-300 p-2 cursor-pointer group-hover:bg-[#4646fc] transform duration-300">
+          <i class="fa-solid fa-arrow-right group-hover:text-[#ffffff]"></i>
+        </div>
+      </div>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- ✦✦✦✦✦✦✦✦✦ SECTION: We Offer Best IT Services END ✦✦✦✦✦✦✦✦✦ -->
+
+<!-- ✦✦✦✦✦✦✦✦✦ SECTION: Contact Form START ✦✦✦✦✦✦✦✦✦ -->
+<section class="py-12 px-4 sm:px-6 lg:px-8 md:px-20 bg-[#B7B2B2]">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 sm:grid-cols-2 flex justify-center items-center">
+      <div class="p-5">
+        <h3 class="font-semibold text-lg sm:text-3xl mb-4">Let’s Build Something Together</h3>
+        <p>Have questions? Need a quote? Just want to chat about your next big idea? Fill out the form below — our team
+          will get back to you within 24 hours.</p>
+      </div>
+      <div class="bg-[#E4DBDB] rounded-lg p-10">
+        <h3 class="font-semibold text-2xl text-center mb-4">Get in Touch With Us</h3>
+        <div class="contact-form grid grid-cols-10 gap-4">
+          <div class="input col-span-10 mt-4">
+            <input type="text" class="bg-[#FFFBFB] w-full p-3 rounded-lg outline-none">
+          </div>
+          <div class="input col-span-5 mt-3">
+            <input type="text" class="bg-[#FFFBFB] w-full p-3 rounded-lg outline-none">
+          </div>
+          <div class="input col-span-5 mt-3">
+            <input type="text" class="bg-[#FFFBFB] w-full p-3 rounded-lg outline-none">
+          </div>
+          <div class="input col-span-5 mt-3">
+            <input type="text" class="bg-[#FFFBFB] w-full p-3 rounded-lg outline-none">
+          </div>
+          <div class="input col-span-5 mt-3">
+            <input type="text" class="bg-[#FFFBFB] w-full p-3 rounded-lg outline-none">
+          </div>
+          <div class="input col-span-10 mt-3">
+            <input type="text" class="bg-[#FFFBFB] w-full p-3 rounded-lg outline-none">
+          </div>
+          <div class="input col-span-10 text-center mt-2">
+            <button
+              class="w-[250px] text-center bg-black hover:bg-opacity-[60%] p-3 text-white rounded-lg cursor-pointer">SUBMIT</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ✦✦✦✦✦✦✦✦✦ SECTION: Contact Form END ✦✦✦✦✦✦✦✦✦ -->
