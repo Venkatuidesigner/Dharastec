@@ -6,7 +6,8 @@
         About Us
       </h1>
       <p class="mt-4 text-lg text-gray-200">
-       We’re a technology-first company with a passion for solving real-world problems through smart digital solutions. From startups to enterprises, we help brands transform, scale, and thrive.
+        We’re a technology-first company with a passion for solving real-world problems through smart digital solutions.
+        From startups to enterprises, we help brands transform, scale, and thrive.
       </p>
     </div>
   </div>
@@ -22,10 +23,10 @@
     </div>
     <div>
       <p class="text-sm tracking-wide mb-2">10+ Years of Experience</p>
-      <h1 class="text-[48px] font-bold leading-tight">
+      <h1 class="text-[24px] sm:text-[48px] font-bold leading-tight">
         Where <span class="text-[#4646fc]">Technology</span> Meets Trust
       </h1>
-      <p class="mt-4 text-lg text-gray-800">
+      <p class="mt-4 text-md sm:text-lg text-gray-800">
         At Dharstec, we turn big ideas into powerful digital solutions. With over 10 years of industry experience, we
         specialize in crafting custom web and app development, scalable IT infrastructure, and user-first designs that
         help businesses grow faster.
@@ -49,7 +50,8 @@
 <section class="bg-gray-50 py-8 sm:py-20 px-4 sm:px-6 lg:px-8">
   <div class="max-w-7xl mx-auto text-center">
     <p class=" tracking-wide mb-2 font-semibold text-md">We Offer Best IT Services</p>
-    <h2 class="text-3xl font-bold"><span class="text-[#4646fc]">Easy Solution</span> for Difficult IT Problems</h2>
+    <h2 class="text-[24px] sm:text-3xl font-bold"><span class="text-[#4646fc]">Easy Solution</span> for Difficult IT
+      Problems</h2>
     <div class="mt-10 grid gap-2 sm:gap-8 grid-cols-1 md:grid-cols-4 our-services">
       @for (item of ourServices; track $index) {
       <div
@@ -61,7 +63,7 @@
           <p class="mt-2 text-sm text-gray-600">{{item.descrption}}</p>
         </div>
         <div class="icon bg-gray-300 p-2 cursor-pointer group-hover:bg-[#4646fc] transform duration-300">
-         <i class="fa-solid fa-arrow-right group-hover:text-[#ffffff]"></i>
+          <i class="fa-solid fa-arrow-right group-hover:text-[#ffffff]"></i>
         </div>
       </div>
       }
@@ -70,3 +72,127 @@
 </section>
 
 <!-- ✦✦✦✦✦✦✦✦✦ SECTION: We Offer Best IT Services END ✦✦✦✦✦✦✦✦✦ -->
+
+<!-- ✦✦✦✦✦✦✦✦✦ SECTION: Industries We Serve START ✦✦✦✦✦✦✦✦✦ -->
+<section class="bg-[#CDCDCD] py-8 sm:py-20 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-7xl mx-auto text-center">
+    <p class=" tracking-wide mb-2 font-semibold text-md">Industries We Serve</p>
+    <h2 class="text-[24px] sm:text-3xl font-bold"><span class="text-[#4646fc]">Industries</span> We Serve</h2>
+    <p class="max-w-4xl mx-auto">Over the years, we’ve partnered with clients across diverse industries — solving unique
+      challenges with tailored tech solutions. Our experience helps us adapt quickly and deliver real impact, no matter
+      the domain.</p>
+    <div class="mt-10 grid gap-2 sm:gap-8 grid-cols-1 md:grid-cols-4 our-services without-icon-brder">
+      @for (item of inDustries; track $index) {
+      <div
+        class="card group relative bg-white rounded-2xl border border-gray-200 hover:border-gray-100 hover:!shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+        <div class="card-details">
+          <div class="w-20 h-20 group-hover:scale-110 transition-transform duration-300"><i
+              class="fa-solid {{item.icon}} text-4xl py-4 group-hover:text-[#4646fc]"></i></div>
+          <h3 class="font-semibold text-lg group-hover:text-[#4646fc]">{{item.title}}</h3>
+          <p class="mt-2 text-sm text-gray-600">{{item.descrption}}</p>
+        </div>
+      </div>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- ✦✦✦✦✦✦✦✦✦ SECTION: Industries We Serve END ✦✦✦✦✦✦✦✦✦ -->
+
+
+<!-- ✦✦✦✦✦✦✦✦✦ SECTION: Our Clients START ✦✦✦✦✦✦✦✦✦ -->
+<section class="py-8 sm:py-16 text-center bg-white px-4 sm:px-6 lg:px-8">
+
+  <h2 class="text-2xl font-bold mb-10">Our Clients</h2>
+  <div class="max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-5 gap-6 sm:gap-10">
+    <div class="rounded-[20px]">
+      <img src="https://hotelmanagementassets.s3.us-east-1.amazonaws.com/img/Eka-logo.svg" alt=""
+        class="w-full h-24 border border-gray-300 rounded-2xl">
+    </div>
+    <div class="rounded-[20px]">
+      <img [src]="dummy_img" alt="" class="w-full h-24 border border-gray-300 rounded-2xl">
+    </div>
+    <div class="rounded-[20px]">
+      <img src="https://chaandi.dharstec.com/assets/logo/chaandi-jewellry-logo.svg" alt=""
+        class="w-full h-24 border border-gray-300 rounded-2xl">
+    </div>
+    <div class="rounded-[20px]">
+      <img [src]="dummy_img" alt="" class="w-full h-24 border border-gray-300 rounded-2xl">
+    </div>
+    <div class="rounded-[20px]">
+      <img [src]="dummy_img" alt="" class="w-full h-24 border border-gray-300 rounded-2xl">
+    </div>
+  </div>
+</section>
+<!-- ✦✦✦✦✦✦✦✦✦ SECTION: Our Clients End ✦✦✦✦✦✦✦✦✦ -->
+
+<!-- ✦✦✦✦✦✦✦✦✦ SECTION: Industries We Serve START ✦✦✦✦✦✦✦✦✦ -->
+<section class="bg-[#CDCDCD] py-8 sm:py-32 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-7xl mx-auto text-center">
+    <div class="grid gap-2 sm:gap-8 grid-cols-1 md:grid-cols-4">
+      @for (item of status; track $index) {
+      <div class="card group relative transition-all duration-500 transform hover:-translate-y-2">
+        <div class="card-details">
+          <h3 class="font-semibold text-[40px] group-hover:text-[#4646fc]">{{item.value}}{{item.suffix}}</h3>
+          <p class="mt-5 text-sm text-gray-600">{{item.label}}</p>
+        </div>
+      </div>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- ✦✦✦✦✦✦✦✦✦ SECTION: Industries We Serve END ✦✦✦✦✦✦✦✦✦ -->
+
+
+<!-- ✦✦✦✦✦✦✦✦✦ SECTION: Customer Feedback START ✦✦✦✦✦✦✦✦✦ -->
+<section class="py-12 px-4 sm:px-6 lg:px-8 md:px-20 bg-gray-50 dark:bg-gray-900">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center">
+      <div>Customer Feedback</div>
+      <h2 class="text-lg sm:text-2xl font-bold mb-2">
+        What Our Clients Say About Us
+      </h2>
+      <p class="text-gray-600 dark:text-gray-300 mb-10">
+        Honest feedback from people who’ve seen our impact firsthand.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+      <mat-card *ngFor="let testimonial of testimonials" class="p-6 !shadow-none !bg-[#E1DFDF]">
+        <div class="flex items-center mb-4">
+          <div class="w-12 h-12 rounded-full bg-gray-300 mr-3">
+            <img [src]="user" alt="">
+          </div>
+          <div>
+            <h3 class="font-semibold">{{ testimonial.name }}</h3>
+            <p class="text-sm text-gray-500">{{ testimonial.role }}</p>
+          </div>
+        </div>
+        <p class="text-gray-600 dark:text-gray-300">
+          {{ testimonial.feedback }}
+        </p>
+      </mat-card>
+    </div>
+  </div>
+</section>
+<!-- ✦✦✦✦✦✦✦✦✦ SECTION: Customer Feedback END ✦✦✦✦✦✦✦✦✦ -->
+
+
+<!-- ✦✦✦✦✦✦✦✦✦ SECTION: Customer Feedback START ✦✦✦✦✦✦✦✦✦ -->
+<section class="py-12 px-4 sm:px-6 lg:px-8 md:px-20 bg-gray-50 dark:bg-gray-900">
+  <div class="max-w-7xl mx-auto bg-[#4646fc] rounded-2xl py-12">
+    <div class="text-center text-white">
+      <h2 class="text-lg sm:text-3xl font-bold mb-2">
+        Let’s Build Something Great Together
+      </h2>
+      <p class="mt-4 dark:text-gray-300">
+        Have a project in mind or just want to learn more about how we work? Reach out — we’d love to connect.
+      </p>
+      <button mat-flat-button class="mt-6 !bg-white !text-black !rounded-sm px-6 py-2">
+        Contact Us
+      </button>
+    </div>
+  </div>
+</section>
+<!-- ✦✦✦✦✦✦✦✦✦ SECTION: Customer Feedback End ✦✦✦✦✦✦✦✦✦ -->
