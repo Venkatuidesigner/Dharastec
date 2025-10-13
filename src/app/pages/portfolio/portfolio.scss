@@ -1,0 +1,13 @@
+.custom-active-tab {
+    a {
+        padding: 10px 20px;
+        background-color: #929090;
+        border-radius: 50px;
+        cursor: pointer;
+
+        &.active-filter {
+            background-color: #000;
+            color: #ffffff;
+        }
+    }
+}

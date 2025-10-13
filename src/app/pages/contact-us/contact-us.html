@@ -15,21 +15,19 @@
 <!-- ✦✦✦✦✦✦✦✦✦ SECTION: HERO START ✦✦✦✦✦✦✦✦✦ -->
 
 <!-- ✦✦✦✦✦✦✦✦✦ SECTION: We Offer Best IT Services START ✦✦✦✦✦✦✦✦✦ -->
-<section class="bg-[#EDEAEA] py-8 sm:py-20 px-4 sm:px-6 lg:px-8">
-  <div class="max-w-7xl mx-auto text-center">
+<section class="bg-[#EDEAEA] py-8 sm:py-8 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-4xl mx-auto text-center">
     <!-- <p class=" tracking-wide mb-2 font-semibold text-md">We Offer Best IT Services</p> -->
-    <h2 class="text-[24px] sm:text-3xl font-bold"><span class="text-[#4646fc]">Reach Us</span> Directly
-      Problems</h2>
-      <p class="max-w-2xl mx-auto">Whether you prefer a call, email, or in-person visit — we’re here to assist you. Feel free to reach out through any of the options below.</p>
-    <div class="mt-10 grid gap-2 sm:gap-8 grid-cols-1 md:grid-cols-4 our-services without-icon-brder">
+    
+    <div class="grid gap-2 sm:gap-8 grid-cols-1 md:grid-cols-1 our-services  without-icon-brder !min-h-auto">
       @for (item of ourServices; track $index) {
       <div
         class="card group relative bg-white !text-center rounded-2xl border border-gray-200 hover:border-gray-100 hover:!shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
-        <div class="card-details">
-          <div class="w-20 h-20  group-hover:scale-110 transition-transform duration-300 w-full"><i
-              class="fa-solid {{item.icon}} text-4xl py-4 group-hover:text-[#4646fc]"></i></div>
-          <h3 class="font-semibold text-lg group-hover:text-[#4646fc]">{{item.title}}</h3>
-          <p class="mt-2 text-sm text-gray-600">{{item.descrption}}</p>
+        <div class="card-details  !min-h-auto">
+          <h2 class="text-[24px] sm:text-3xl font-bold"><span class="text-[#4646fc]">Reach Us</span> Directly Problems</h2>
+          <p class="max-w-2xl my-3 mx-auto">We’re here to help! Feel free to email us, and we’ll get back to you as soon as possible.</p>
+          <h3 class="font-semibold {{item.class}}">{{item.title}} : <a href="mailto:Dharstec@gmail.com?subject=Inquiry%20from%20Website" class="mt-2 text-sm text-gray-600">{{item.descrption}}</a></h3>
+          
         </div>
       </div>
       }
@@ -44,31 +42,28 @@
   <div class="max-w-7xl mx-auto">
     <div class="grid grid-cols-1 sm:grid-cols-2 flex justify-center items-center">
       <div class="p-5">
-        <h3 class="font-semibold text-lg sm:text-3xl mb-4">Send Us a Message</h3>
-        <p>Have some suggestions or just want to say hi? Message us</p>
-        <img [src]="dummy_img" alt="" class="mt-5 h-[380px] rounded-2xl">
+        <h3 class="font-semibold text-lg sm:text-3xl mb-4">Reach Out to Us</h3>
+        <p>Drop us your message and we will get back as soon as possible.</p>
+        <img [src]="contactus" alt="" class="mt-5 w-full h-[450px] rounded-2xl shadow-2xl">
       </div>
       <div>
           <div class="bg-[#E4DBDB] rounded-lg p-10 max-w-[400px] mx-auto">
                     <h3 class="font-semibold text-2xl text-center mb-4">Get in Touch With Us</h3>
         <div class="contact-form grid grid-cols-10 gap-4">
           <div class="input col-span-10 mt-4">
-            <input type="text" class="bg-[#FFFBFB] w-full p-3 rounded-lg outline-none">
-          </div>
-          <div class="input col-span-5 mt-3">
-            <input type="text" class="bg-[#FFFBFB] w-full p-3 rounded-lg outline-none">
-          </div>
-          <div class="input col-span-5 mt-3">
-            <input type="text" class="bg-[#FFFBFB] w-full p-3 rounded-lg outline-none">
-          </div>
-          <div class="input col-span-5 mt-3">
-            <input type="text" class="bg-[#FFFBFB] w-full p-3 rounded-lg outline-none">
-          </div>
-          <div class="input col-span-5 mt-3">
-            <input type="text" class="bg-[#FFFBFB] w-full p-3 rounded-lg outline-none">
+            <input type="text" class="bg-[#FFFBFB] w-full p-3 rounded-lg outline-none" placeholder="Name">
           </div>
           <div class="input col-span-10 mt-3">
-            <input type="text" class="bg-[#FFFBFB] w-full p-3 rounded-lg outline-none">
+            <input type="text" class="bg-[#FFFBFB] w-full p-3 rounded-lg outline-none" placeholder="Email">
+          </div>
+          <div class="input col-span-10 mt-3">
+            <input type="text" class="bg-[#FFFBFB] w-full p-3 rounded-lg outline-none" placeholder="Phone Number">
+          </div>
+          <div class="input col-span-10 mt-3">
+            <input type="text" class="bg-[#FFFBFB] w-full p-3 rounded-lg outline-none" placeholder="Subject">
+          </div>
+          <div class="input col-span-10 mt-3">
+            <input type="text" class="bg-[#FFFBFB] w-full p-3 rounded-lg outline-none" placeholder="Message">
           </div>
           <div class="input col-span-10 text-center mt-2">
             <button

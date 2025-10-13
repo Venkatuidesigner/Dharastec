@@ -3,6 +3,11 @@ module.exports = {
   content: [
     "./src/**/*.{html,ts,scss}"
   ],
+  safelist: [
+    'text-[#008000]', // green
+    'text-[#ffffff]', 
+    'text-[#ff0000]', 
+  ],
   theme: {
     extend: {
       gridTemplateColumns: {
