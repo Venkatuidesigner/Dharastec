@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
 import { dummy_img, dummy_img_1, contactus} from '../../shared/globals'
-import { NgClass } from '@angular/common';
 
 @Component({
   selector: 'app-contact-us',
-  imports: [NgClass],
+  imports: [],
   templateUrl: './contact-us.html',
   styleUrl: './contact-us.scss'
 })
