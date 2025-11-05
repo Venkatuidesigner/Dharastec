@@ -15,22 +15,28 @@ export class Services {
   user = user;
 
   ourServices = [
-    { img: dummy_img, icon: 'fa-computer', title: 'IT Services', descrption: 'End-to-end technology solutions that include development, support, and consulting to keep your business running smoothly.' },
-    { img: dummy_img, icon: 'fa-mobile-screen-button', title: 'Product Development', descrption: 'From idea to launch, we build innovative digital products tailored to your business goals.' },
-    { img: dummy_img, icon: 'fa-pen-ruler', title: 'Creative Designing', descrption: 'Modern, user-friendly designs that blend creativity with functionality to enhance user experience.' },
-    { img: dummy_img, icon: 'fa-laptop', title: 'Flexible Engagement', descrption: 'Hire us your way — choose a complete project package or hourly-based hiring that fits your needs.' },
+    { img: dummy_img, icon: 'fa-computer', title: 'Website Design & Development', descrption: 'Modern, responsive and high-performing websites crafted to represent your brand and engage your audience.' },
+    { img: dummy_img, icon: 'fa-mobile-screen-button', title: 'Software Development', descrption: 'Custom-built software solutions designed to automate operations and improve business efficiency.'},
+    { img: dummy_img, icon: 'fa-pen-ruler', title: 'Mobile App Development', descrption: 'Native and cross-platform mobile applications developed for performance, usability and growth.'},
+    { img: dummy_img, icon: 'fa-laptop', title: 'UI/UX Design', descrption: 'User-centric designs that combine creativity with functionality to deliver intuitive digital experiences.' },
+    { img: dummy_img, icon: 'fa-laptop', title: 'Maintenance & Support', descrption: 'Continuous monitoring, updates and performance optimization to keep your systems running smoothly.' },
+    { img: dummy_img, icon: 'fa-laptop', title: 'IT Consulting', descrption: 'Strategic consulting to align your IT systems, architecture and technology investments with business goals.' },
+    { img: dummy_img, icon: 'fa-laptop', title: 'Cloud Solutions', descrption: 'Comprehensive cloud setup, migration and management for improved scalability, flexibility, and security.' },
   ]
   inDustries = [
-    { icon: 'fa-user-doctor', title: 'Healthcare', descrption: 'Built secure platforms for appointment booking, telemedicine, and patient data management.' },
-    { icon: 'fa-coins', title: ' Finance & FinTech', descrption: 'Engineered secure fintech apps, digital wallets, and real-time analytics dashboards.' },
-    { icon: 'fa-shop', title: 'Retail & E-commerce', descrption: 'Created scalable online stores, inventory systems, and personalized shopping experiences.' },
-    { icon: 'fa-building', title: 'Real Estate', descrption: 'Built custom CRM tools, property listing portals, and 3D walkthrough platforms.' },
+    { icon: 'fa-user-doctor', title: 'Agriculture', descrption: 'Developed digital platforms for large-scale farming and farmer management, scheme and agri-market activities for government departments.' },
+    { icon: 'fa-coins', title: 'Real Estate', descrption: 'Developed custom platforms for end-to-end land procurement, construction management, and sales for government departments.' },
+    { icon: 'fa-shop', title: 'Retail & E-commerce', descrption: 'Created scalable online stores along with store management systems for retail and e-commerce businesses.' },
+    { icon: 'fa-building', title: 'Hospitality & Hotels', descrption: 'Delivered hotel booking and management platforms for small businesses.' },
+    { icon: 'fa-building', title: 'Transport & Logistics', descrption: 'Designed systems for vehicle compliance, route planning, tracking and business operations management for government departments.' },
+    { icon: 'fa-building', title: 'Government Departments', descrption: 'Designed and implemented digital systems for departments handling agriculture, transport, social welfare and housing - driving large-scale digital transformation initiatives.' },
+    { icon: 'fa-building', title: 'Small Businesses & Startups', descrption: 'Empowering SMEs with affordable websites, automation tools and cloud-based applications as per their requirements.' },
   ]
   whyChooseUs  = [
-    { icon: 'fa-users', title: 'Expert Team', descrption: 'Skilled professionals with diverse industry experience' },
-    { icon: 'fa-laptop', title: 'Tailored Solutions', descrption: 'Services customized to match your unique needs.' },
-    { icon: 'fa-house-laptop', title: 'Latest Technology', descrption: 'We use cutting-edge tools and frameworks.' },
-    { icon: 'fa-headset', title: 'Reliable Support', descrption: 'A track record of successful projects across industries.' },
+    { icon: 'fa-users', title: 'Expert Team', descrption: 'Skilled professionals with proven industry experience.' },
+    { icon: 'fa-laptop', title: 'Tailored Solutions', descrption: 'Custom-built services designed around your business needs.' },
+    { icon: 'fa-house-laptop', title: 'Latest Technology', descrption: 'We use modern, scalable tools and frameworks.' },
+    { icon: 'fa-headset', title: 'Reliable Support', descrption: 'End-to-end assistance to keep your systems running smoothly.' },
   ]
   status = [
     { label: 'Happy Clients', value: 100, count: 0, suffix: '+' },
@@ -55,5 +61,44 @@ export class Services {
       role: 'Operations Head, GroTech India',
       feedback: 'They delivered our app ahead of schedule, with flawless execution. Their process is clear, collaborative, and efficient. Highly recommended!'
     }
+  ];
+
+  steps = [
+    {
+      number: 1,
+      title: 'Consultation',
+      desc:
+        'We begin by understanding your business challenges, goals and existing systems. Our team collaborates closely with you to identify key opportunities for digital solutions.',
+    },
+    {
+      number: 2,
+      title: 'Defining the Scope',
+      desc:
+        'Based on our discussions, we prepare a detailed scope document outlining objectives, deliverables, timelines and estimated budget. This ensures mutual clarity and alignment before development begins.',
+    },
+    {
+      number: 3,
+      title: 'Solution Development',
+      desc:
+        'Our development team designs and builds tailored web, mobile or cloud-based solutions, ensuring scalability, performance and user-friendliness at every stage.',
+    },
+    {
+      number: 4,
+      title: 'Demonstration & Feedback',
+      desc:
+        'We provide live demos at key milestones so you can visualize progress and share feedback. This iterative approach ensures the final product meets your expectations perfectly.',
+    },
+    {
+      number: 5,
+      title: 'Implementation',
+      desc:
+        'Once approved, the solution is deployed and integrated into your operational environment. Our experts ensure a seamless transition with minimal disruption to your business.',
+    },
+    {
+      number: 6,
+      title: 'Continuous Support',
+      desc:
+        'After implementation, we continue to assist with maintenance, upgrades and performance optimization ensuring your solution evolves with your business needs.',
+    },
   ];
 }
