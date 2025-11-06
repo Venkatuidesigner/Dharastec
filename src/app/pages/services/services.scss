@@ -9,7 +9,7 @@
     justify-content: space-between;
     align-items: flex-start;
     position: relative;
-    gap: 40px;
+    gap: 15px;
 
 }
 
@@ -41,27 +41,27 @@
     z-index: 10;
 
     &.bg-light-one {
-        background-color: #9c9f89a2;
+        background-color: #ffe2e2;
     }
 
     &.bg-light-two {
-        background-color: #f2cafb;
+        background-color: #e5e8eb;
     }
 
     &.bg-light-three {
-        background-color: #fecfe6;
+        background-color: #ffecd5;
     }
 
     &.bg-light-four {
-        background-color: #ffedcd;
+        background-color: #dff2fe;
     }
 
     &.bg-light-five {
-        background-color: #abf9da;
+        background-color: #fce7f3;
     }
 
     &.bg-light-six {
-        background-color: #a1e3fa;
+        background-color: #cffafe;
     }
 }
 
@@ -69,35 +69,35 @@
 .card {
     margin-top: 16px;
     background: #ffffff;
-    padding: 20px 24px;
+    padding: 20px;
     border-radius: 18px;
-    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.05);
+    // box-shadow: 0 4px 24px rgba(0, 0, 0, 0.05);
     width: 100%;
-    min-height: 150px;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    min-height: 200px;
+    // transition: transform 0.2s ease, box-shadow 0.2s ease;
 
     &.bg-light-one {
-        background-color: #9c9f89a2;
+        background-color: #ffe2e2;
     }
 
     &.bg-light-two {
-        background-color: #f2cafb;
+        background-color: #e5e8eb;
     }
 
     &.bg-light-three {
-        background-color: #fecfe6;
+        background-color: #ffecd5;
     }
 
     &.bg-light-four {
-        background-color: #ffedcd;
+        background-color: #dff2fe;
     }
 
     &.bg-light-five {
-        background-color: #abf9da;
+        background-color: #fce7f3;
     }
 
     &.bg-light-six {
-        background-color: #a1e3fa;
+        background-color: #cffafe;
     }
 }
 
@@ -127,7 +127,7 @@
     top: 50%;
     //   background: #e1e3e8;
     border-bottom: 2px dotted #4746fc;
-    margin-top: 150px;
+    margin-top: 180px;
 }
 
 .arrow::after {
@@ -159,5 +159,15 @@
 
     .arrow {
         display: none;
+    }
+}
+
+.models-list {
+    margin-top: 10px;
+    li {
+        width: 100%;
+        margin-bottom: 5px;
+        padding-left: 0;
+        font-size: 15px;
     }
 }

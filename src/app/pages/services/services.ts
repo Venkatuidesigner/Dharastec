@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { dummy_img, about_us, code, user } from '../../shared/globals'
 import { MaterialModule } from '../../shared/material-module';
-import { NgFor } from '@angular/common';
+import { NgClass } from '@angular/common';
 @Component({
   selector: 'app-services',
-  imports: [MaterialModule, NgFor],
+  imports: [MaterialModule, NgClass],
   templateUrl: './services.html',
   styleUrl: './services.scss'
 })
@@ -19,9 +19,9 @@ export class Services {
     { img: dummy_img, icon: 'fa-mobile-screen-button', title: 'Software Development', descrption: 'Custom-built software solutions designed to automate operations and improve business efficiency.'},
     { img: dummy_img, icon: 'fa-pen-ruler', title: 'Mobile App Development', descrption: 'Native and cross-platform mobile applications developed for performance, usability and growth.'},
     { img: dummy_img, icon: 'fa-laptop', title: 'UI/UX Design', descrption: 'User-centric designs that combine creativity with functionality to deliver intuitive digital experiences.' },
-    { img: dummy_img, icon: 'fa-laptop', title: 'Maintenance & Support', descrption: 'Continuous monitoring, updates and performance optimization to keep your systems running smoothly.' },
-    { img: dummy_img, icon: 'fa-laptop', title: 'IT Consulting', descrption: 'Strategic consulting to align your IT systems, architecture and technology investments with business goals.' },
-    { img: dummy_img, icon: 'fa-laptop', title: 'Cloud Solutions', descrption: 'Comprehensive cloud setup, migration and management for improved scalability, flexibility, and security.' },
+    { img: dummy_img, icon: 'fa-headset', title: 'Maintenance & Support', descrption: 'Continuous monitoring, updates and performance optimization to keep your systems running smoothly.' },
+    { img: dummy_img, icon: 'fa-users-gear', title: 'IT Consulting', descrption: 'Strategic consulting to align your IT systems, architecture and technology investments with business goals.' },
+    { img: dummy_img, icon: 'fa-cloud', title: 'Cloud Solutions', descrption: 'Comprehensive cloud setup, migration and management for improved scalability, flexibility, and security.' },
   ]
   inDustries = [
     { icon: 'fa-user-doctor', title: 'Agriculture', descrption: 'Developed digital platforms for large-scale farming and farmer management, scheme and agri-market activities for government departments.' },
