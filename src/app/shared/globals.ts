@@ -11,3 +11,4 @@ export const dummy_img_2 = 'https://i.pinimg.com/1200x/9d/5f/ea/9d5fea438a7e7f9d
 
 //Contact us
 export const contactus = '../../../images/contactus.svg';
+export const wcu = '../../../images/why-chooseus.jpg';

@@ -14,6 +14,38 @@
 </section>
 <!-- ✦✦✦✦✦✦✦✦✦ SECTION: HERO START ✦✦✦✦✦✦✦✦✦ -->
 
+
+<!-- ✦✦✦✦✦✦✦✦✦ SECTION: We Offer Best IT Services START ✦✦✦✦✦✦✦✦✦ -->
+<section class="bg-gray-50 py-8 sm:py-20 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-7xl mx-auto text-center">
+    <!-- <p class=" tracking-wide mb-2 font-semibold text-md">We Offer Best IT Services</p> -->
+    <h2 class="text-[24px] sm:text-3xl font-bold"><span class="text-[#4646fc]">Our</span> Services</h2>
+    <p class="max-w-4xl mx-auto mt-3">We offer end-to-end technology solutions that help businesses build, scale and
+      sustain their digital presence effectively.
+    </p>
+    <div class="mt-10 grid gap-2 sm:gap-8 grid-cols-1 md:grid-cols-4 our-services" >
+      @for (item of ourServices; track $index) {
+      <div
+        class="card group relative bg-white rounded-2xl border border-gray-200 hover:border-gray-100 hover:!shadow-2xl transition-all duration-500 transform hover:-translate-y-2" >
+        <div class="card-details">
+          <div class="w-20 h-20 group-hover:scale-110 transition-transform duration-300"><i
+              class="fa-solid {{item.icon}} text-4xl py-4 group-hover:text-[#4646fc]"></i></div>
+          <h3 class="font-semibold text-lg group-hover:text-[#4646fc]">{{item.title}}</h3>
+          <p class="mt-2 text-sm text-gray-600">{{item.descrption}}</p>
+        </div>
+        <!-- <div class="icon bg-gray-300 p-2 cursor-pointer group-hover:bg-[#4646fc] transform duration-300">
+          <i class="fa-solid fa-arrow-right group-hover:text-[#ffffff]"></i>
+        </div> -->
+      </div>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- ✦✦✦✦✦✦✦✦✦ SECTION: We Offer Best IT Services END ✦✦✦✦✦✦✦✦✦ -->
+
+
+
 <!-- ✦✦✦✦✦✦✦✦✦ SECTION: OUR Process START ✦✦✦✦✦✦✦✦✦ -->
 <section class="bg-white py-8 sm:pb-20 px-4 sm:px-6 lg:px-8">
   <div class="max-w-7xl mx-auto text-center">
@@ -124,42 +156,12 @@
 </section>
 <!-- ✦✦✦✦✦✦✦✦✦ SECTION: OUR Process END ✦✦✦✦✦✦✦✦✦ -->
 
-<!-- ✦✦✦✦✦✦✦✦✦ SECTION: We Offer Best IT Services START ✦✦✦✦✦✦✦✦✦ -->
-<section class="bg-gray-50 py-8 sm:py-20 px-4 sm:px-6 lg:px-8">
-  <div class="max-w-7xl mx-auto text-center">
-    <p class=" tracking-wide mb-2 font-semibold text-md">We Offer Best IT Services</p>
-    <h2 class="text-[24px] sm:text-3xl font-bold"><span class="text-[#4646fc]">Our</span> Services</h2>
-    <p class="max-w-4xl mx-auto mt-3">We offer end-to-end technology solutions that help businesses build, scale and
-      sustain their digital presence effectively.
-    </p>
-    <div class="mt-10 grid gap-2 sm:gap-8 grid-cols-1 md:grid-cols-4 our-services justify-items-center items-center">
-      @for (item of ourServices; track $index) {
-      <div
-        class="card group relative bg-white rounded-2xl border border-gray-200 hover:border-gray-100 hover:!shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
-        <div class="card-details">
-          <div class="w-20 h-20 group-hover:scale-110 transition-transform duration-300"><i
-              class="fa-solid {{item.icon}} text-4xl py-4 group-hover:text-[#4646fc]"></i></div>
-          <h3 class="font-semibold text-lg group-hover:text-[#4646fc]">{{item.title}}</h3>
-          <p class="mt-2 text-sm text-gray-600">{{item.descrption}}</p>
-        </div>
-        <div class="icon bg-gray-300 p-2 cursor-pointer group-hover:bg-[#4646fc] transform duration-300">
-          <i class="fa-solid fa-arrow-right group-hover:text-[#ffffff]"></i>
-        </div>
-      </div>
-      }
-    </div>
-  </div>
-</section>
-
-<!-- ✦✦✦✦✦✦✦✦✦ SECTION: We Offer Best IT Services END ✦✦✦✦✦✦✦✦✦ -->
-
-
 
 
 <!-- ✦✦✦✦✦✦✦✦✦ SECTION: Engagement Models START ✦✦✦✦✦✦✦✦✦ -->
 <section class="bg-gray-100 py-8 sm:py-20 px-4 sm:px-6 lg:px-8">
   <div class="max-w-7xl mx-auto text-center">
-    <p class=" tracking-wide mb-2 font-semibold text-md">Engagement Models</p>
+    <!-- <p class=" tracking-wide mb-2 font-semibold text-md">Engagement Models</p> -->
     <h2 class="text-[24px] sm:text-3xl mb-3 font-bold"><span class="text-[#4646fc]">Engagement</span> Models</h2>
     <p class="max-w-4xl mx-auto">At <span class="text-[#4646fc]">Dharstec Solutions</span>, we understand that every
       business has unique requirements, timelines and budgets. That’s why we offer flexible engagement models that let
@@ -285,18 +287,18 @@
         <p class="max-w-4xl mx-auto mt-3">We combine expertise, innovation, and a client-first approach to deliver
           impactful digital solutions that drive business growth.
         </p>
-        <div class="grid grid-cols-2 gap-6 mt-4">
+        <div class="grid grid-cols-1 gap-6 mt-4">
+          <img [src]="wcu" alt="" class="rounded-2xl w-full h-[85%]">
+          <!-- <img [src]="dummy_img" alt="" class="rounded-2xl w-full h-[130px]">
           <img [src]="dummy_img" alt="" class="rounded-2xl w-full h-[130px]">
-          <img [src]="dummy_img" alt="" class="rounded-2xl w-full h-[130px]">
-          <img [src]="dummy_img" alt="" class="rounded-2xl w-full h-[130px]">
-          <img [src]="dummy_img" alt="" class="rounded-2xl w-full h-[130px]">
+          <img [src]="dummy_img" alt="" class="rounded-2xl w-full h-[130px]"> -->
         </div>
       </div>
       <div>
         <div class="grid grid-cols-2 gap-8">
           @for (item of whyChooseUs; track $index) {
-          <div class="card text-left px-6 py-2">
-            <div class="w-20 h-20 group-hover:scale-110 transition-transform duration-300"><i
+          <div class="card !group text-left px-6 py-2 transition-all duration-500 transform hover:-translate-y-2">
+            <div class="w-20 h-20 group-hover:scale-110 transition-transform transform duration-300"><i
                 class="fa-solid {{item.icon}} text-4xl py-2 group-hover:text-[#4646fc]"></i></div>
             <h3 class="font-semibold text-lg group-hover:text-[#4646fc]">{{item.title}}</h3>
             <p class="mt-2 text-sm text-gray-600">{{item.descrption}}</p>
@@ -312,7 +314,7 @@
 <!-- ✦✦✦✦✦✦✦✦✦ SECTION: Industries We Serve START ✦✦✦✦✦✦✦✦✦ -->
 <section class="bg-[#CDCDCD] py-8 sm:py-20 px-4 sm:px-6 lg:px-8">
   <div class="max-w-7xl mx-auto text-center">
-    <p class=" tracking-wide mb-2 font-semibold text-md">Industries We Serve</p>
+    <!-- <p class=" tracking-wide mb-2 font-semibold text-md">Industries We Serve</p> -->
     <h2 class="text-[24px] sm:text-3xl font-bold"><span class="text-[#4646fc]">Industries</span> We Serve</h2>
     <p class="max-w-4xl mx-auto">Over the years, we’ve partnered with clients across diverse sectors - addressing unique
       operational challenges with tailored digital solutions. Our domain expertise helps us deliver measurable impact,
@@ -418,7 +420,7 @@
 
 <!-- ✦✦✦✦✦✦✦✦✦ SECTION: Customer Feedback START ✦✦✦✦✦✦✦✦✦ -->
 <section class="py-12 px-4 sm:px-6 lg:px-8 md:px-20 bg-gray-50 dark:bg-gray-900">
-  <div class="max-w-7xl mx-auto bg-[#4646fc] rounded-2xl py-12">
+  <div class="max-w-7xl mx-auto bg-gradient-to-r from-blue-300 to-indigo-800 rounded-2xl py-12">
     <div class="text-center text-white">
       <h2 class="text-lg sm:text-3xl font-bold mb-2">
         We’d Love to Work With You

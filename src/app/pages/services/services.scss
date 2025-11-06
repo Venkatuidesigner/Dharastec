@@ -74,7 +74,7 @@
     // box-shadow: 0 4px 24px rgba(0, 0, 0, 0.05);
     width: 100%;
     min-height: 200px;
-    // transition: transform 0.2s ease, box-shadow 0.2s ease;
+    // transition: transform 0.5s ease, box-shadow 0.5s ease;
 
     &.bg-light-one {
         background-color: #ffe2e2;
@@ -108,7 +108,7 @@
 
 /* CARD TEXT */
 .card h3 {
-    font-size: 1rem;
+    font-size: 1.125rem;
     font-weight: 600;
     margin-bottom: 6px;
 }

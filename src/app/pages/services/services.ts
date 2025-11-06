@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { dummy_img, about_us, code, user } from '../../shared/globals'
+import { dummy_img, about_us, code, user, wcu } from '../../shared/globals'
 import { MaterialModule } from '../../shared/material-module';
 import { NgClass } from '@angular/common';
 @Component({
   selector: 'app-services',
-  imports: [MaterialModule, NgClass],
+  imports: [MaterialModule],
   templateUrl: './services.html',
   styleUrl: './services.scss'
 })
@@ -13,7 +13,7 @@ export class Services {
   code = code;
   dummy_img = dummy_img;
   user = user;
-
+  wcu = wcu;
   ourServices = [
     { img: dummy_img, icon: 'fa-computer', title: 'Website Design & Development', descrption: 'Modern, responsive and high-performing websites crafted to represent your brand and engage your audience.' },
     { img: dummy_img, icon: 'fa-mobile-screen-button', title: 'Software Development', descrption: 'Custom-built software solutions designed to automate operations and improve business efficiency.'},
@@ -24,13 +24,13 @@ export class Services {
     { img: dummy_img, icon: 'fa-cloud', title: 'Cloud Solutions', descrption: 'Comprehensive cloud setup, migration and management for improved scalability, flexibility, and security.' },
   ]
   inDustries = [
-    { icon: 'fa-user-doctor', title: 'Agriculture', descrption: 'Developed digital platforms for large-scale farming and farmer management, scheme and agri-market activities for government departments.' },
-    { icon: 'fa-coins', title: 'Real Estate', descrption: 'Developed custom platforms for end-to-end land procurement, construction management, and sales for government departments.' },
+    { icon: 'fa-wheat-awn', title: 'Agriculture', descrption: 'Developed digital platforms for large-scale farming and farmer management, scheme and agri-market activities for government departments.' },
+    { icon: 'fa-sign-hanging', title: 'Real Estate', descrption: 'Developed custom platforms for end-to-end land procurement, construction management, and sales for government departments.' },
     { icon: 'fa-shop', title: 'Retail & E-commerce', descrption: 'Created scalable online stores along with store management systems for retail and e-commerce businesses.' },
     { icon: 'fa-building', title: 'Hospitality & Hotels', descrption: 'Delivered hotel booking and management platforms for small businesses.' },
-    { icon: 'fa-building', title: 'Transport & Logistics', descrption: 'Designed systems for vehicle compliance, route planning, tracking and business operations management for government departments.' },
-    { icon: 'fa-building', title: 'Government Departments', descrption: 'Designed and implemented digital systems for departments handling agriculture, transport, social welfare and housing - driving large-scale digital transformation initiatives.' },
-    { icon: 'fa-building', title: 'Small Businesses & Startups', descrption: 'Empowering SMEs with affordable websites, automation tools and cloud-based applications as per their requirements.' },
+    { icon: 'fa-truck-fast', title: 'Transport & Logistics', descrption: 'Designed systems for vehicle compliance, route planning, tracking and business operations management for government departments.' },
+    { icon: 'fa-building-columns', title: 'Government Departments', descrption: 'Designed and implemented digital systems for departments handling agriculture, transport, social welfare and housing - driving large-scale digital transformation initiatives.' },
+    { icon: 'fa-business-time', title: 'Small Businesses & Startups', descrption: 'Empowering SMEs with affordable websites, automation tools and cloud-based applications as per their requirements.' },
   ]
   whyChooseUs  = [
     { icon: 'fa-users', title: 'Expert Team', descrption: 'Skilled professionals with proven industry experience.' },

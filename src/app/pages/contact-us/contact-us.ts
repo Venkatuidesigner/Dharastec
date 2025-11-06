@@ -12,9 +12,9 @@ export class ContactUs {
   dummy_img= dummy_img;
   contactus = contactus;
   ourServices = [
-    // { img: dummy_img, class:'text-[#1e1d51]', icon: 'fa-user-tie', title: 'Visit Us Daily', descrption: 'No 10, Union Carbide Colony, Madipakkam, Chennai -88' },
+    { img: dummy_img, class:'text-[#1e1d51]', icon: 'fa-user-tie', title: 'Address', descrption: 'Chennai, India.' },
     // { img: dummy_img, class:'text-[#4646fc]', icon: 'fa-mobile-screen-button', title: 'Call US', descrption: '+91 90806 75646' },
     // { img: dummy_img, class:'text-[#008000]', icon: 'fa-brands fa-square-whatsapp', title: 'Whatsapp', descrption: '+91 90806 75646' },
-    { img: dummy_img, class:'text-[#ff0000]', icon: 'fa-envelope', title: 'Email Us', descrption: 'Dharstec@gmail.com' },
+    { img: dummy_img, class:'text-[#ff0000]', icon: 'fa-envelope', title: 'Email Us', descrption: 'info@dharstec.com' },
   ]
 }

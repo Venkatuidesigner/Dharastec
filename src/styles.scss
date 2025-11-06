@@ -50,7 +50,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     @apply p-8 bg-white rounded-2xl text-left;
 
     div.card-details {
-        @apply min-h-[210px] border-b border-b-gray-200 ;
+        @apply min-h-[150px]  ;
 
         img {
             @apply rounded-lg w-20 h-16;
@@ -68,4 +68,11 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
    div.card-details {
      @apply border-none;
     }
+}
+
+@layer utilities {
+  .center-last-row {
+    grid-auto-flow: row;
+    place-items: center;
+  }
 }
