@@ -22,6 +22,7 @@ export class Services {
     { img: dummy_img, icon: 'fa-headset', title: 'Maintenance & Support', descrption: 'Continuous monitoring, updates and performance optimization to keep your systems running smoothly.' },
     { img: dummy_img, icon: 'fa-users-gear', title: 'IT Consulting', descrption: 'Strategic consulting to align your IT systems, architecture and technology investments with business goals.' },
     { img: dummy_img, icon: 'fa-cloud', title: 'Cloud Solutions', descrption: 'Comprehensive cloud setup, migration and management for improved scalability, flexibility, and security.' },
+    { img: dummy_img, icon: 'fa-diagram-project', title: 'Project Management & Monitoring', descrption: 'Comprehensive project planning, tracking and performance monitoring to ensure timely delivery, quality output and alignment with business objectives.' },
   ]
   inDustries = [
     { icon: 'fa-wheat-awn', title: 'Agriculture', descrption: 'Developed digital platforms for large-scale farming and farmer management, scheme and agri-market activities for government departments.' },
@@ -31,6 +32,7 @@ export class Services {
     { icon: 'fa-truck-fast', title: 'Transport & Logistics', descrption: 'Designed systems for vehicle compliance, route planning, tracking and business operations management for government departments.' },
     { icon: 'fa-building-columns', title: 'Government Departments', descrption: 'Designed and implemented digital systems for departments handling agriculture, transport, social welfare and housing - driving large-scale digital transformation initiatives.' },
     { icon: 'fa-business-time', title: 'Small Businesses & Startups', descrption: 'Empowering SMEs with affordable websites, automation tools and cloud-based applications as per their requirements.' },
+    { icon: 'fa-people-arrows', title: 'Social Welfare & NGOs', descrption: 'Developed digital platforms for welfare organizations and NGOs to streamline operations, manage beneficiaries, monitor program impact and enhance transparency in service delivery.' },
   ]
   whyChooseUs  = [
     { icon: 'fa-users', title: 'Expert Team', descrption: 'Skilled professionals with proven industry experience.' },
