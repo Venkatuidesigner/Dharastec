@@ -1,5 +1,6 @@
 <!-- ✦✦✦✦✦✦✦✦✦ SECTION: HERO START ✦✦✦✦✦✦✦✦✦ -->
-<section class="text-white py-8 sm:py-32 px-4 sm:px-6 lg:px-8 bg-[#4646fc]">
+<section class="text-white py-10 sm:py-28 px-4 sm:px-6 lg:px-8"
+  style="background: radial-gradient(900px 600px at 20% 0%, rgba(34,211,238,.16), transparent 55%), radial-gradient(900px 600px at 80% 0%, rgba(79,70,229,.32), transparent 55%), linear-gradient(135deg, #0b1220 0%, #0f172a 100%);">
   <div class="max-w-4xl mx-auto grid text-center gap-10 items-center justify-center">
     <div>
       <h1 class="text-[48px] font-bold leading-tight">
@@ -16,15 +17,95 @@
 
 
 <!-- ✦✦✦✦✦✦✦✦✦ SECTION: Where Technology Meets Trust START ✦✦✦✦✦✦✦✦✦ -->
-<section class="py-8 sm:py-32 px-4 sm:px-6 lg:px-8 bg-[#F3F0F0]">
+<section class="py-10 sm:py-28 px-4 sm:px-6 lg:px-8 bg-[rgba(248,250,252,1)]">
   <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
     <div class="flex justify-center rounded-lg">
-      <img [src]="code" alt="" class=" w-full h-full !rounded-xl">
+      <div class="glass rounded-3xl p-6 sm:p-10 w-full relative overflow-hidden">
+        <div class="absolute -top-12 -right-16 w-72 h-72 rounded-full blur-3xl bg-[rgba(79,70,229,.18)]"></div>
+        <div class="absolute -bottom-16 -left-16 w-80 h-80 rounded-full blur-3xl bg-[rgba(34,211,238,.14)]"></div>
+
+        <div class="relative">
+          <p class="text-xs tracking-widest uppercase muted">Engineering + Design</p>
+          <h3 class="mt-2 text-xl sm:text-2xl font-extrabold section-title">
+            We build systems that feel fast.
+          </h3>
+          <p class="mt-3 text-gray-600">
+            A modern stack, strong UI craft, and clean delivery—built for real users and real growth.
+          </p>
+
+          <div class="mt-6 rounded-2xl bg-white/70 border border-slate-200/40 p-4">
+            <div class="w-full max-w-md mx-auto floaty">
+              <svg viewBox="0 0 520 320" class="w-full h-auto" role="img" aria-label="Animated network illustration">
+                <defs>
+                  <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#22d3ee" stop-opacity="0.95" />
+                    <stop offset="1" stop-color="#4f46e5" stop-opacity="0.95" />
+                  </linearGradient>
+                  <linearGradient id="g2" x1="1" y1="0" x2="0" y2="1">
+                    <stop offset="0" stop-color="#4f46e5" stop-opacity="0.9" />
+                    <stop offset="1" stop-color="#22d3ee" stop-opacity="0.9" />
+                  </linearGradient>
+                  <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+                    <feGaussianBlur stdDeviation="6" result="b" />
+                    <feMerge>
+                      <feMergeNode in="b" />
+                      <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                  </filter>
+                </defs>
+
+                <g opacity="0.9" filter="url(#softGlow)">
+                  <path d="M60 170 C130 40, 220 40, 260 155 C300 270, 400 270, 460 140"
+                    fill="none" stroke="url(#g1)" stroke-width="3" stroke-linecap="round" stroke-dasharray="10 10">
+                    <animate attributeName="stroke-dashoffset" from="0" to="-40" dur="2.8s" repeatCount="indefinite" />
+                  </path>
+                  <path d="M70 210 C160 260, 220 260, 300 170 C360 100, 420 90, 470 170"
+                    fill="none" stroke="url(#g2)" stroke-width="3" stroke-linecap="round" stroke-dasharray="10 10">
+                    <animate attributeName="stroke-dashoffset" from="0" to="40" dur="3.4s" repeatCount="indefinite" />
+                  </path>
+                </g>
+
+                <g>
+                  <circle cx="90" cy="185" r="14" fill="#ffffff" stroke="url(#g1)" stroke-width="3" />
+                  <circle cx="250" cy="150" r="18" fill="#ffffff" stroke="url(#g2)" stroke-width="3" />
+                  <circle cx="430" cy="155" r="14" fill="#ffffff" stroke="url(#g1)" stroke-width="3" />
+                </g>
+
+                <g opacity="0.6">
+                  <circle cx="250" cy="150" r="44" fill="none" stroke="url(#g1)" stroke-width="2" stroke-dasharray="6 10">
+                    <animateTransform attributeName="transform" type="rotate" from="0 250 150" to="360 250 150" dur="9s"
+                      repeatCount="indefinite" />
+                  </circle>
+                  <circle cx="250" cy="150" r="76" fill="none" stroke="url(#g2)" stroke-width="2" stroke-dasharray="4 14">
+                    <animateTransform attributeName="transform" type="rotate" from="360 250 150" to="0 250 150" dur="12s"
+                      repeatCount="indefinite" />
+                  </circle>
+                </g>
+              </svg>
+            </div>
+          </div>
+
+          <div class="mt-6 grid grid-cols-3 gap-3 text-sm">
+            <div class="rounded-2xl p-3 bg-white/70 border border-slate-200/40 text-center">
+              <div class="font-extrabold text-gray-900">Design</div>
+              <div class="muted">UX & UI</div>
+            </div>
+            <div class="rounded-2xl p-3 bg-white/70 border border-slate-200/40 text-center">
+              <div class="font-extrabold text-gray-900">Build</div>
+              <div class="muted">Web & Apps</div>
+            </div>
+            <div class="rounded-2xl p-3 bg-white/70 border border-slate-200/40 text-center">
+              <div class="font-extrabold text-gray-900">Scale</div>
+              <div class="muted">Cloud</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div>
       <p class="text-sm tracking-wide mb-2">10+ Years of Experience</p>
-      <h1 class="text-[24px] sm:text-[48px] font-bold leading-tight">
-        Where <span class="text-[#4646fc]">Technology</span> Meets Trust
+      <h1 class="text-[24px] sm:text-[48px] font-extrabold leading-tight section-title">
+        Where <span class="text-brand">Technology</span> Meets Trust
       </h1>
       <p class="mt-4 text-md sm:text-lg text-gray-800">
         At Dharstec, we turn big ideas into powerful digital solutions. With over 10 years of industry experience, we
@@ -44,51 +125,111 @@
 </section>
 <!-- ✦✦✦✦✦✦✦✦✦ SECTION: Where Technology Meets Trust End ✦✦✦✦✦✦✦✦✦ -->
 
-
-
-<!-- ✦✦✦✦✦✦✦✦✦ SECTION: We Offer Best IT Services START ✦✦✦✦✦✦✦✦✦ -->
-<section class="bg-[#EDEAEA] py-8 sm:py-20 px-4 sm:px-6 lg:px-8">
-  <div class="max-w-7xl mx-auto text-center">
-    <p class=" tracking-wide mb-2 font-semibold text-md">We Offer Best IT Services</p>
-    <h2 class="text-[24px] sm:text-3xl font-bold"><span class="text-[#4646fc]">Easy Solution</span> for Difficult IT
-      Problems</h2>
-    <div class="mt-10 grid gap-2 sm:gap-8 grid-cols-1 md:grid-cols-4 our-services">
-      @for (item of ourServices; track $index) {
-      <div
-        class="card group relative bg-white rounded-2xl border border-gray-200 hover:border-gray-100 hover:!shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
-        <div class="card-details">
-          <div class="w-20 h-20 group-hover:scale-110 transition-transform duration-300"><i
-              class="fa-solid {{item.icon}} text-4xl py-4 group-hover:text-[#4646fc]"></i></div>
-          <h3 class="font-semibold text-lg group-hover:text-[#4646fc]">{{item.title}}</h3>
-          <p class="mt-2 text-sm text-gray-600">{{item.descrption}}</p>
-        </div>
-        <div class="icon bg-gray-300 p-2 cursor-pointer group-hover:bg-[#4646fc] transform duration-300">
-          <i class="fa-solid fa-arrow-right group-hover:text-[#ffffff]"></i>
+<!-- ✦✦✦✦✦✦✦✦✦ SECTION: Why Choose Us START ✦✦✦✦✦✦✦✦✦ -->
+<section class="bg-white pt-8 sm:pt-20 pb-8 sm:pb-20 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid grid-cols-2 gap-6">
+      <div>
+        <h2 class="text-[24px] sm:text-3xl font-bold section-title"><span class="text-brand">Why </span> Choose Us</h2>
+        <p class="max-w-4xl mx-auto mt-3">We combine expertise, innovation, and a client-first approach to deliver
+          impactful digital solutions that drive business growth.
+        </p>
+        <div class="grid grid-cols-1 gap-6 mt-4">
+          <div class="glass rounded-3xl p-6 sm:p-8 relative overflow-hidden">
+            <div class="absolute -top-10 -right-12 w-56 h-56 rounded-full blur-3xl bg-[rgba(79,70,229,.16)]"></div>
+            <div class="absolute -bottom-10 -left-12 w-64 h-64 rounded-full blur-3xl bg-[rgba(34,211,238,.12)]"></div>
+            <div class="relative">
+              <div class="text-sm muted">How we work</div>
+              <div class="mt-2 text-xl font-extrabold section-title">Fast iterations. Clean delivery.</div>
+              <div class="mt-4 space-y-3 text-sm">
+                <div class="flex gap-3 items-start">
+                  <div class="w-8 h-8 rounded-xl bg-[rgba(79,70,229,.10)] flex items-center justify-center">
+                    <i class="fa-solid fa-bolt text-brand"></i>
+                  </div>
+                  <div>
+                    <div class="font-semibold text-gray-900">Rapid prototyping</div>
+                    <div class="muted">Clickable UI + feedback loops early.</div>
+                  </div>
+                </div>
+                <div class="flex gap-3 items-start">
+                  <div class="w-8 h-8 rounded-xl bg-[rgba(34,211,238,.12)] flex items-center justify-center">
+                    <i class="fa-solid fa-shield-halved text-[rgb(34,211,238)]"></i>
+                  </div>
+                  <div>
+                    <div class="font-semibold text-gray-900">Reliable quality</div>
+                    <div class="muted">Performance, security, and maintainability.</div>
+                  </div>
+                </div>
+                <div class="flex gap-3 items-start">
+                  <div class="w-8 h-8 rounded-xl bg-[rgba(79,70,229,.10)] flex items-center justify-center">
+                    <i class="fa-solid fa-layer-group text-brand"></i>
+                  </div>
+                  <div>
+                    <div class="font-semibold text-gray-900">Scalable architecture</div>
+                    <div class="muted">Designed to grow with your product.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-6 rounded-2xl bg-white/70 border border-slate-200/40 p-4">
+                <svg viewBox="0 0 520 120" class="w-full h-auto" aria-hidden="true">
+                  <defs>
+                    <linearGradient id="lineG" x1="0" y1="0" x2="1" y2="0">
+                      <stop offset="0" stop-color="#22d3ee" />
+                      <stop offset="1" stop-color="#4f46e5" />
+                    </linearGradient>
+                  </defs>
+                  <path d="M20 70 C120 20, 220 110, 320 60 C380 30, 440 40, 500 70" fill="none"
+                    stroke="url(#lineG)" stroke-width="4" stroke-linecap="round" stroke-dasharray="10 10">
+                    <animate attributeName="stroke-dashoffset" from="0" to="-60" dur="3.2s" repeatCount="indefinite" />
+                  </path>
+                  <circle cx="110" cy="45" r="8" fill="#4f46e5">
+                    <animate attributeName="cy" values="45;35;45" dur="2.4s" repeatCount="indefinite" />
+                  </circle>
+                  <circle cx="260" cy="78" r="8" fill="#22d3ee">
+                    <animate attributeName="cy" values="78;68;78" dur="2.2s" repeatCount="indefinite" />
+                  </circle>
+                  <circle cx="410" cy="52" r="8" fill="#4f46e5">
+                    <animate attributeName="cy" values="52;42;52" dur="2.6s" repeatCount="indefinite" />
+                  </circle>
+                </svg>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      }
+      <div>
+        <div class="grid grid-cols-2 gap-8">
+          @for (item of whyChooseUs; track $index) {
+          <div class="card !group text-left px-6 py-2 transition-all duration-500 transform hover:-translate-y-2">
+            <div class="w-20 h-20 group-hover:scale-110 transition-transform transform duration-300"><i
+                class="fa-solid {{item.icon}} text-4xl py-2 group-hover:text-brand"></i></div>
+            <h3 class="font-semibold text-lg group-hover:text-brand">{{item.title}}</h3>
+            <p class="mt-2 text-sm text-gray-600">{{item.descrption}}</p>
+          </div>
+          }
+        </div>
+      </div>
     </div>
   </div>
 </section>
-
-<!-- ✦✦✦✦✦✦✦✦✦ SECTION: We Offer Best IT Services END ✦✦✦✦✦✦✦✦✦ -->
+<!-- ✦✦✦✦✦✦✦✦✦ SECTION: Why Choose Us END ✦✦✦✦✦✦✦✦✦ -->
 
 <!-- ✦✦✦✦✦✦✦✦✦ SECTION: Industries We Serve START ✦✦✦✦✦✦✦✦✦ -->
 <section class="bg-[#CDCDCD] py-8 sm:py-20 px-4 sm:px-6 lg:px-8">
   <div class="max-w-7xl mx-auto text-center">
-    <p class=" tracking-wide mb-2 font-semibold text-md">Industries We Serve</p>
-    <h2 class="text-[24px] sm:text-3xl font-bold"><span class="text-[#4646fc]">Industries</span> We Serve</h2>
-    <p class="max-w-4xl mx-auto">Over the years, we’ve partnered with clients across diverse industries — solving unique
-      challenges with tailored tech solutions. Our experience helps us adapt quickly and deliver real impact, no matter
-      the domain.</p>
-    <div class="mt-10 grid gap-2 sm:gap-8 grid-cols-1 md:grid-cols-4 our-services without-icon-brder">
+    <h2 class="text-[24px] sm:text-3xl font-bold section-title"><span class="text-brand">Industries</span> We Serve</h2>
+    <p class="max-w-4xl mx-auto">Over the years, we’ve partnered with clients across diverse sectors - addressing unique
+      operational challenges with tailored digital solutions. Our domain expertise helps us deliver measurable impact,
+      no matter the industry.</p>
+    <div
+      class="mt-10 grid gap-2 sm:gap-8 grid-cols-1 md:grid-cols-4 our-services without-icon-brder justify-items-start">
       @for (item of inDustries; track $index) {
       <div
         class="card group relative bg-white rounded-2xl border border-gray-200 hover:border-gray-100 hover:!shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
         <div class="card-details">
           <div class="w-20 h-20 group-hover:scale-110 transition-transform duration-300"><i
-              class="fa-solid {{item.icon}} text-4xl py-4 group-hover:text-[#4646fc]"></i></div>
-          <h3 class="font-semibold text-lg group-hover:text-[#4646fc]">{{item.title}}</h3>
+              class="fa-solid {{item.icon}} text-4xl py-4 group-hover:text-brand"></i></div>
+          <h3 class="font-semibold text-lg group-hover:text-brand">{{item.title}}</h3>
           <p class="mt-2 text-sm text-gray-600">{{item.descrption}}</p>
         </div>
       </div>
@@ -98,8 +239,6 @@
 </section>
 
 <!-- ✦✦✦✦✦✦✦✦✦ SECTION: Industries We Serve END ✦✦✦✦✦✦✦✦✦ -->
-
-
 <!-- ✦✦✦✦✦✦✦✦✦ SECTION: Our Clients START ✦✦✦✦✦✦✦✦✦ -->
 <section class="py-8 sm:py-16 text-center bg-[#EEEEEE] px-4 sm:px-6 lg:px-8">
 
@@ -127,26 +266,26 @@
 <!-- ✦✦✦✦✦✦✦✦✦ SECTION: Our Clients End ✦✦✦✦✦✦✦✦✦ -->
 
 <!-- ✦✦✦✦✦✦✦✦✦ SECTION: Industries We Serve START ✦✦✦✦✦✦✦✦✦ -->
-<section class="bg-[#CDCDCD] py-8 sm:py-32 px-4 sm:px-6 lg:px-8">
+<!-- <section class="bg-[#CDCDCD] py-8 sm:py-32 px-4 sm:px-6 lg:px-8">
   <div class="max-w-7xl mx-auto text-center">
     <div class="grid gap-2 sm:gap-8 grid-cols-1 md:grid-cols-4">
       @for (item of status; track $index) {
       <div class="card group relative transition-all duration-500 transform hover:-translate-y-2">
         <div class="card-details">
-          <h3 class="font-semibold text-[40px] group-hover:text-[#4646fc]">{{item.value}}{{item.suffix}}</h3>
+          <h3 class="font-semibold text-[40px] group-hover:text-brand">{{item.value}}{{item.suffix}}</h3>
           <p class="mt-5 text-sm text-gray-600">{{item.label}}</p>
         </div>
       </div>
       }
     </div>
   </div>
-</section>
+</section> -->
 
 <!-- ✦✦✦✦✦✦✦✦✦ SECTION: Industries We Serve END ✦✦✦✦✦✦✦✦✦ -->
 
 
 <!-- ✦✦✦✦✦✦✦✦✦ SECTION: Customer Feedback START ✦✦✦✦✦✦✦✦✦ -->
-<section class="py-12 px-4 sm:px-6 lg:px-8 md:px-20 bg-gray-50 dark:bg-gray-900">
+<!-- <section class="py-12 px-4 sm:px-6 lg:px-8 md:px-20 bg-gray-50 dark:bg-gray-900">
   <div class="max-w-7xl mx-auto">
     <div class="text-center">
       <div>Customer Feedback</div>
@@ -175,7 +314,7 @@
       </mat-card>
     </div>
   </div>
-</section>
+</section> -->
 <!-- ✦✦✦✦✦✦✦✦✦ SECTION: Customer Feedback END ✦✦✦✦✦✦✦✦✦ -->
 
  <!-- ✦✦✦✦✦✦✦✦✦ SECTION: Customer Feedback START ✦✦✦✦✦✦✦✦✦ -->

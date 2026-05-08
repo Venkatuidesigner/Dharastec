@@ -10,7 +10,19 @@
 @use "tailwindcss";
 
 * {
-   font-family: 'Inter', sans-serif;
+	 font-family: 'Inter', sans-serif;
+}
+
+:root {
+  --brand-500: #4f46e5; /* indigo */
+  --brand-600: #4338ca;
+  --accent-500: #22d3ee; /* cyan */
+  --ink-950: #0b1220;
+  --ink-700: #334155;
+  --muted-500: #64748b;
+  --surface-0: #ffffff;
+  --surface-1: #f8fafc;
+  --ring: rgba(79, 70, 229, 0.35);
 }
 html {
   @include mat.theme((
@@ -29,6 +41,7 @@ body {
   // user's system settings.
   color-scheme: light;
   -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 
   // Set a default background, font and text colors for the application using
   // Angular Material's system-level CSS variables. Learn more about these
@@ -43,7 +56,50 @@ body {
 /* You can add global styles to this file, and also import other style files */
 
 // html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; }
+
+.app-shell {
+  background:
+    radial-gradient(1100px 700px at 85% -10%, rgba(34, 211, 238, 0.22), transparent 55%),
+    radial-gradient(1000px 700px at 10% -10%, rgba(79, 70, 229, 0.22), transparent 55%),
+    linear-gradient(180deg, #ffffff, #f8fafc);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--brand-600), var(--brand-500));
+  color: white;
+  border-radius: 9999px;
+  padding: 10px 16px;
+  font-weight: 600;
+  box-shadow: 0 10px 30px rgba(67, 56, 202, 0.22);
+  transition: transform 180ms ease, box-shadow 180ms ease, opacity 180ms ease;
+}
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 34px rgba(67, 56, 202, 0.28);
+}
+.btn-primary:active { transform: translateY(0px); }
+
+.btn-ghost {
+  border-radius: 9999px;
+  padding: 10px 16px;
+  font-weight: 600;
+  border: 1px solid rgba(148, 163, 184, 0.5);
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(10px);
+  transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
+}
+.btn-ghost:hover {
+  transform: translateY(-1px);
+  border-color: rgba(79, 70, 229, 0.35);
+  background: rgba(255, 255, 255, 0.85);
+}
+
+@keyframes floaty {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0px); }
+}
 
 
 .our-services div.card {
@@ -71,6 +127,19 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 }
 
 @layer utilities {
+  .text-brand { color: var(--brand-500); }
+  .bg-brand { background-color: var(--brand-500); }
+  .border-brand { border-color: var(--brand-500); }
+  .ring-brand { box-shadow: 0 0 0 6px var(--ring); }
+  .muted { color: var(--muted-500); }
+  .section-title { color: var(--ink-950); letter-spacing: -0.02em; }
+  .glass {
+    background: rgba(255, 255, 255, 0.72);
+    border: 1px solid rgba(148, 163, 184, 0.35);
+    backdrop-filter: blur(12px);
+  }
+  .floaty { animation: floaty 6s ease-in-out infinite; }
+
   .center-last-row {
     grid-auto-flow: row;
     place-items: center;

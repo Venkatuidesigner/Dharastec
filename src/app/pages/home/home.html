@@ -1,40 +1,69 @@
 <!-- ✦✦✦✦✦✦✦✦✦ SECTION: HERO START ✦✦✦✦✦✦✦✦✦ -->
-<section class="text-white py-8 sm:py-32 px-4 relative sm:px-6 lg:px-8"
-  style="background: linear-gradient(to right, #4646fc 67%, #000000 67%);">
+<section class="text-white py-10 sm:py-32 px-4 relative sm:px-6 lg:px-8 overflow-hidden"
+  style="background: radial-gradient(900px 600px at 20% 0%, rgba(34,211,238,.18), transparent 55%), radial-gradient(900px 600px at 80% 0%, rgba(79,70,229,.35), transparent 55%), linear-gradient(135deg, #0b1220 0%, #0b1220 45%, #0f172a 100%);">
+
+  <div class="pointer-events-none absolute inset-0 opacity-60">
+    <div class="absolute -top-10 -left-10 w-72 h-72 rounded-full blur-3xl bg-[rgba(79,70,229,.35)] floaty"></div>
+    <div class="absolute -bottom-16 -right-10 w-80 h-80 rounded-full blur-3xl bg-[rgba(34,211,238,.22)] floaty"
+      style="animation-delay: -2s;"></div>
+  </div>
 
   <!-- <img src="../../../../images/bg.png" 
        alt="background shape"
        class="absolute z-0 top-5 inset-0 w-[67%] h-full object-cover opacity-50" /> -->
 
-  <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center ">
+  <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center relative">
     <div>
-      <p class="text-sm tracking-wide mb-2">Empowering Digital Innovation</p>
-      <h1 class="text-[24px] sm:text-[48px] font-bold leading-tight">
-        Build Smarter, Faster, and Scalable IT Solutions
-      </h1>
-      <p class="mt-4 text-lg text-gray-200">
-        We deliver digital transformation solutions using cloud services,
-        enterprise software, and modern technologies to scale your growth.
+      <p class="text-sm tracking-wide mb-3 text-[rgba(226,232,240,.9)]">
+        Software • Product • Cloud • Design
       </p>
-      <button mat-raised-button color="accent" class="mt-6">Explore Our Services</button>
+      <h1 class="text-[28px] sm:text-[54px] font-extrabold leading-tight">
+        Modern software that <span class="text-brand">ships fast</span> and scales.
+      </h1>
+      <p class="mt-5 text-base sm:text-lg text-[rgba(226,232,240,.9)] max-w-xl">
+        We build high-performing websites, apps, and internal platforms—designed for users and engineered for growth.
+      </p>
+      <div class="mt-7 flex flex-wrap gap-3 items-center">
+        <a routerLink="/services" class="btn-primary">Explore Services</a>
+        <a routerLink="/contact-us" class="btn-ghost text-white border-white/20 bg-white/10 hover:bg-white/15">
+          Talk to Us
+        </a>
+      </div>
+      <div class="mt-8 grid grid-cols-3 gap-4 max-w-md text-sm text-[rgba(226,232,240,.85)]">
+        <div class="glass bg-white/5 border-white/10 rounded-2xl p-3">
+          <div class="text-white font-semibold">10+ yrs</div>
+          <div class="opacity-80">Experience</div>
+        </div>
+        <div class="glass bg-white/5 border-white/10 rounded-2xl p-3">
+          <div class="text-white font-semibold">End‑to‑end</div>
+          <div class="opacity-80">Delivery</div>
+        </div>
+        <div class="glass bg-white/5 border-white/10 rounded-2xl p-3">
+          <div class="text-white font-semibold">Design‑first</div>
+          <div class="opacity-80">Builds</div>
+        </div>
+      </div>
     </div>
-    <div class="flex justify-center rounded-lg group">
-      <img [src]="about_us" class="w-full h-full rounded-xl] :scale-102 transition-all duration-300">
+    <div class="flex justify-center rounded-lg group relative">
+      <div class="absolute -inset-6 rounded-[32px] bg-[rgba(79,70,229,.18)] blur-2xl"></div>
+      <div class="glass rounded-[28px] p-3 relative w-full">
+        <img [src]="about_us" class="w-full h-full rounded-[22px] ring-brand transition-transform duration-300 group-hover:scale-[1.02]">
+      </div>
     </div>
   </div>
 </section>
 <!-- ✦✦✦✦✦✦✦✦✦ SECTION: HERO START ✦✦✦✦✦✦✦✦✦ -->
 
 <!-- ✦✦✦✦✦✦✦✦✦ SECTION: Where Technology Meets Trust START ✦✦✦✦✦✦✦✦✦ -->
-<section class="py-8 sm:py-32 px-4 sm:px-6 lg:px-8 bg-[#F3F0F0]">
+<section class="py-10 sm:py-28 px-4 sm:px-6 lg:px-8 bg-[rgba(248,250,252,1)]">
   <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
     <div class="flex justify-center rounded-lg">
       <img [src]="code" alt="" class=" w-full h-full !rounded-xl">
     </div>
     <div>
       <p class="text-sm tracking-wide mb-2">10+ Years of Experience</p>
-      <h1 class="text-[24px] sm:text-[48px] font-bold leading-tight">
-        Where <span class="text-[#4646fc]">Technology</span> Meets Trust
+      <h1 class="text-[24px] sm:text-[48px] font-bold leading-tight section-title">
+        Where <span class="text-brand">Technology</span> Meets Trust
       </h1>
       <p class="mt-4 text-md sm:text-lg text-gray-800">
         At Dharstec, we turn big ideas into powerful digital solutions. With over 10 years of industry experience, we
@@ -85,7 +114,7 @@
 <section class="bg-gray-50 py-8 sm:py-20 px-4 sm:px-6 lg:px-8">
   <div class="max-w-7xl mx-auto text-center">
     <p class=" tracking-wide mb-2 font-semibold text-md">We Offer Best IT Services</p>
-    <h2 class="text-[24px] sm:text-3xl font-bold"><span class="text-[#4646fc]">Easy Solution</span> for Difficult IT
+    <h2 class="text-[24px] sm:text-3xl font-bold section-title"><span class="text-brand">Easy Solution</span> for Difficult IT
       Problems</h2>
     <div class="mt-10 grid gap-2 sm:gap-8 grid-cols-1 md:grid-cols-4 our-services">
       @for (item of ourServices; track $index) {
@@ -93,11 +122,11 @@
         class="card group relative bg-white rounded-2xl border border-gray-200 hover:border-gray-100 hover:!shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
         <div class="card-details">
           <div class="w-20 h-20 group-hover:scale-110 transition-transform duration-300"><i
-              class="fa-solid {{item.icon}} text-4xl py-4 group-hover:text-[#4646fc]"></i></div>
-          <h3 class="font-semibold text-lg group-hover:text-[#4646fc]">{{item.title}}</h3>
+              class="fa-solid {{item.icon}} text-4xl py-4 group-hover:text-brand"></i></div>
+          <h3 class="font-semibold text-lg group-hover:text-brand">{{item.title}}</h3>
           <p class="mt-2 text-sm text-gray-600">{{item.descrption}}</p>
         </div>
-        <div class="icon bg-gray-300 p-2 cursor-pointer group-hover:bg-[#4646fc] transform duration-300">
+        <div class="icon bg-gray-300 p-2 cursor-pointer group-hover:bg-brand transform duration-300">
           <i class="fa-solid fa-arrow-right group-hover:text-[#ffffff]"></i>
         </div>
       </div>
@@ -109,20 +138,18 @@
 <!-- ✦✦✦✦✦✦✦✦✦ SECTION: We Offer Best IT Services END ✦✦✦✦✦✦✦✦✦ -->
 
 <!-- ✦✦✦✦✦✦✦✦✦ SECTION: We Make Digital Work Better START ✦✦✦✦✦✦✦✦✦ -->
-<section class="bg-white py-8 sm:py-20 px-4 sm:px-6 lg:px-8">
+<section class="bg-white py-10 sm:py-20 px-4 sm:px-6 lg:px-8">
   <div class="max-w-7xl mx-auto ">
     <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-8">
       <div>
-        <h1 class="text-[24px] sm:text-4xl font-bold mb-2">We Make <span class="text-[#4646fc]">Digital Work</span>
+        <h1 class="text-[24px] sm:text-4xl font-bold mb-2 section-title">We Make <span class="text-brand">Digital Work</span>
           Better — For You</h1>
         <p class="text-gray-600 max-w-2xl">
           At Dharstec, we believe great technology should make life easier — not more complicated. That's why we design
           and develop solutions that are intuitive, inclusive, and built for real people.
         </p>
       </div>
-      <button mat-flat-button class="mt-4 md:mt-0 !bg-black text-white !rounded-sm px-6 py-2">
-        Explore Our Projects
-      </button>
+      <a routerLink="/portfolio" class="btn-primary mt-4 md:mt-0 inline-flex">Explore Our Projects</a>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-10 gap-6">
@@ -190,7 +217,7 @@
   <div class="max-w-7xl mx-auto">
     <div class="text-center w-full mx-auto">
       <h2 class="text-lg sm:text-2xl md:text-3xl font-bold mb-4">
-        Your <span class="text-[#4646fc]">Tech Partner</span>, Not Just a Vendor
+        Your <span class="text-brand">Tech Partner</span>, Not Just a Vendor
       </h2>
       <p class="text-gray-600 dark:text-gray-300 max-w-4xl mx-auto">
         Our focus isn’t just delivering a project; it’s building long-term solutions that evolve
@@ -205,11 +232,11 @@
           <div class="flex justify-center items-center">
             <div
               class="rounded-full flex justify-center items-center bg-[#ffffff] bg-opacity-[25%] text-black !shadow-2xl mr-4 w-[65px] h-[65px]">
-              <i class="fa-solid {{feature.icon}} text-2xl group-hover:text-[#4646fc]"></i>
+              <i class="fa-solid {{feature.icon}} text-2xl group-hover:text-brand"></i>
             </div>
           </div>
           <div>
-            <h3 class="font-semibold text-lg sm:text-xl group-hover:text-[#4646fc] transition-colors">{{ feature.title
+            <h3 class="font-semibold text-lg sm:text-xl group-hover:text-brand transition-colors">{{ feature.title
               }}</h3>
             <p class="text-gray-600 dark:text-gray-300 mt-2">{{ feature.desc }}</p>
           </div>
@@ -223,13 +250,18 @@
 <!-- ✦✦✦✦✦✦✦✦✦ SECTION: Your Tech Partner, Not Just a Vendor END ✦✦✦✦✦✦✦✦✦ -->
 
 <!-- ✦✦✦✦✦✦✦✦✦ SECTION: Easy Solution for Difficult IT Problems START ✦✦✦✦✦✦✦✦✦ -->
-<section class="py-20 px-4 sm:px-6 lg:px-8 text-center text-white bg-[#4646fc]">
-  <h2 class="text-lg sm:text-2xl md:text-3xl font-bold mb-6">
-    Easy Solution for Difficult IT Problems
+<section class="py-16 px-4 sm:px-6 lg:px-8 text-center text-white overflow-hidden"
+  style="background: radial-gradient(900px 600px at 30% 0%, rgba(34,211,238,.18), transparent 55%), linear-gradient(135deg, rgba(67,56,202,.95), rgba(11,18,32,.95));">
+  <h2 class="text-lg sm:text-2xl md:text-3xl font-extrabold mb-3">
+    Ready to build something great?
   </h2>
-  <button mat-raised-button color="primary" class="mt-5">
-    Get Started
-  </button>
+  <p class="max-w-2xl mx-auto text-[rgba(226,232,240,.9)]">
+    Let’s talk about your product, timeline, and the fastest path to a clean launch.
+  </p>
+  <div class="mt-6 flex justify-center gap-3 flex-wrap">
+    <a routerLink="/contact-us" class="btn-primary">Get Started</a>
+    <a routerLink="/services" class="btn-ghost text-white border-white/20 bg-white/10 hover:bg-white/15">See Services</a>
+  </div>
 </section>
 <!-- ✦✦✦✦✦✦✦✦✦ SECTION: Easy Solution for Difficult IT Problems END ✦✦✦✦✦✦✦✦✦ -->
 

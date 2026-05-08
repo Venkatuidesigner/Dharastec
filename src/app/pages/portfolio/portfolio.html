@@ -1,5 +1,6 @@
 <!-- ✦✦✦✦✦✦✦✦✦ SECTION: HERO START ✦✦✦✦✦✦✦✦✦ -->
-<section class="text-white py-8 sm:py-32 px-4 sm:px-6 lg:px-8 relative bg-cover bg-center bg-no-repeat" style="background-image: linear-gradient(rgba(70,70,252,0.7), rgba(0, 0, 90, 0.7)), url('images/bg/portfolio.jpg');">
+<section class="text-white py-10 sm:py-28 px-4 sm:px-6 lg:px-8 relative bg-cover bg-center bg-no-repeat overflow-hidden"
+  style="background-image: radial-gradient(900px 600px at 20% 0%, rgba(34,211,238,.16), transparent 55%), radial-gradient(900px 600px at 80% 0%, rgba(79,70,229,.32), transparent 55%), linear-gradient(rgba(11,18,32,.85), rgba(15,23,42,.92)), url('images/bg/portfolio.jpg');">
   <div class="max-w-4xl mx-auto grid text-center gap-10 items-center justify-center">
     <div>
       <h1 class="text-[48px] font-bold leading-tight">
@@ -14,9 +15,9 @@
 </section>
 <!-- ✦✦✦✦✦✦✦✦✦ SECTION: HERO START ✦✦✦✦✦✦✦✦✦ -->
 <!-- ✦✦✦✦✦✦✦✦✦ SECTION: HERO START ✦✦✦✦✦✦✦✦✦ -->
-<section class="bg-[#EDEAEA] py-8 sm:py-20 px-4 sm:px-6 lg:px-8">
+<section class="bg-[rgba(248,250,252,1)] py-10 sm:py-20 px-4 sm:px-6 lg:px-8">
   <div class="max-w-7xl mx-auto text-center">
-    <h2 class="text-[24px] sm:text-3xl font-bold mb-5"><span class="text-[#4646fc]">Showcasing</span> What We’ve Built
+    <h2 class="text-[24px] sm:text-3xl font-bold mb-5 section-title"><span class="text-brand">Showcasing</span> What We’ve Built
     </h2>
     <div class="flex-none sm:flex gap-2 mb-4 sm:mb-10 custom-active-tab items-center  justify-center">
       <a (click)="filter='All Projects'" [ngClass]="filter === 'All Projects' ? ' active-filter' : ''">
@@ -52,10 +53,10 @@
 
 
 <!-- ✦✦✦✦✦✦✦✦✦ SECTION: We Offer Best IT Services START ✦✦✦✦✦✦✦✦✦ -->
-<section class="bg-gray-50 py-8 sm:py-20 px-4 sm:px-6 lg:px-8">
+<section class="bg-[rgba(248,250,252,1)] py-10 sm:py-20 px-4 sm:px-6 lg:px-8">
   <div class="max-w-7xl mx-auto text-center">
     <p class=" tracking-wide mb-2 font-semibold text-md">We Offer Best IT Services</p>
-    <h2 class="text-[24px] sm:text-3xl font-bold"><span class="text-[#4646fc]">Easy Solution</span> for Difficult IT
+    <h2 class="text-[24px] sm:text-3xl font-bold section-title"><span class="text-brand">Easy Solution</span> for Difficult IT
       Problems</h2>
     <div class="mt-10 grid gap-2 sm:gap-8 grid-cols-1 md:grid-cols-4 our-services">
       @for (item of ourServices; track $index) {
@@ -63,11 +64,11 @@
         class="card group relative bg-white rounded-2xl border border-gray-200 hover:border-gray-100 hover:!shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
         <div class="card-details">
           <div class="w-20 h-20 group-hover:scale-110 transition-transform duration-300"><i
-              class="fa-solid {{item.icon}} text-4xl py-4 group-hover:text-[#4646fc]"></i></div>
-          <h3 class="font-semibold text-lg group-hover:text-[#4646fc]">{{item.title}}</h3>
+              class="fa-solid {{item.icon}} text-4xl py-4 group-hover:text-brand"></i></div>
+          <h3 class="font-semibold text-lg group-hover:text-brand">{{item.title}}</h3>
           <p class="mt-2 text-sm text-gray-600">{{item.descrption}}</p>
         </div>
-        <div class="icon bg-gray-300 p-2 cursor-pointer group-hover:bg-[#4646fc] transform duration-300">
+        <div class="icon bg-gray-300 p-2 cursor-pointer group-hover:bg-brand transform duration-300">
           <i class="fa-solid fa-arrow-right group-hover:text-[#ffffff]"></i>
         </div>
       </div>
@@ -80,7 +81,8 @@
 
 <!-- ✦✦✦✦✦✦✦✦✦ SECTION: Customer Feedback START ✦✦✦✦✦✦✦✦✦ -->
 <section class="py-12 px-4 sm:px-6 lg:px-8 md:px-20 bg-gray-50 dark:bg-gray-900">
-  <div class="max-w-7xl mx-auto bg-gradient-to-r from-blue-300 to-indigo-800 rounded-2xl py-12">
+  <div class="max-w-7xl mx-auto rounded-2xl py-12"
+    style="background: radial-gradient(900px 600px at 30% 0%, rgba(34,211,238,.18), transparent 55%), linear-gradient(135deg, rgba(67,56,202,.95), rgba(11,18,32,.95));">
     <div class="text-center text-white">
       <h2 class="text-lg sm:text-3xl font-bold mb-2">
         We’d Love to Work With You
@@ -89,9 +91,7 @@
         Big idea or small need, every project starts with a conversation. Reach out, and let’s see how we can bring your
         goals to life.
       </p>
-      <button mat-flat-button class="mt-6 !bg-white !text-black !rounded-sm px-6 py-2">
-        Contact Us
-      </button>
+      <a routerLink="/contact-us" class="btn-primary mt-6 inline-flex">Contact Us</a>
     </div>
   </div>
 </section>

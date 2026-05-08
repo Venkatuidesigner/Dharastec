@@ -1,4 +1,4 @@
-<div class="w-full shadow-md bg-white fixed top-0 left-0 z-50 px-4 sm:px-6 lg:px-8" id="header">
+<div class="w-full fixed top-0 left-0 z-50 px-4 sm:px-6 lg:px-8" id="header">
 
   <!-- Header -->
   <header class="max-w-7xl mx-auto flex items-center justify-between  py-4 relative">
@@ -16,23 +16,27 @@
     </button>
 
     <!-- Desktop Menu -->
-    <nav class="hidden lg:flex lg:items-center lg:space-x-6 navitems">
-      <a routerLink="/home"  routerLinkActive="active">Home</a>
+    <nav class="hidden lg:flex lg:items-center lg:space-x-2 navitems">
+      <a routerLink="/home" routerLinkActive="active">Home</a>
       <a routerLink="/about" routerLinkActive="active">About Us</a>
       <a routerLink="/services" routerLinkActive="active">Services</a>
       <a routerLink="/portfolio" routerLinkActive="active">Portfolio</a>
-      <a routerLink="/contact-us" routerLinkActive="active">Contact us</a>
-      <a routerLink="/contact-us" routerLinkActive="active">Get a Quote</a>
+      <a routerLink="/contact-us" routerLinkActive="active">Contact</a>
+      <a routerLink="/contact-us" class="btn-primary ml-2">Get a Quote</a>
     </nav>
   </header>
 
   <!-- Mobile Overlay Menu -->
   <div
-    class="absolute top-full left-0 w-full bg-white text-gray-800 shadow-lg transition-all duration-300 ease-in-out lg:hidden"
+    class="absolute top-full left-0 w-full text-gray-900 shadow-lg transition-all duration-300 ease-in-out lg:hidden glass"
     [ngClass]="{ 'block': mobileMenuOpen, 'hidden': !mobileMenuOpen }">
     <nav class="flex flex-col p-4 space-y-3 text-base font-medium">
-      <a routerLink="/home" (click)="mobileMenuOpen=false" class="hover:text-green-700">Home</a>
-      <a routerLink="/about" (click)="mobileMenuOpen=false" class="hover:text-green-700">About Us</a>
+      <a routerLink="/home" (click)="mobileMenuOpen=false">Home</a>
+      <a routerLink="/about" (click)="mobileMenuOpen=false">About Us</a>
+      <a routerLink="/services" (click)="mobileMenuOpen=false">Services</a>
+      <a routerLink="/portfolio" (click)="mobileMenuOpen=false">Portfolio</a>
+      <a routerLink="/contact-us" (click)="mobileMenuOpen=false">Contact</a>
+      <a routerLink="/contact-us" (click)="mobileMenuOpen=false" class="btn-primary w-fit">Get a Quote</a>
     </nav>
   </div>
 </div>
