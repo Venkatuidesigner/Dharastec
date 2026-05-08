@@ -157,23 +157,25 @@
   <p class="agency-eyebrow light mx-auto mb-3">Trusted By Teams</p>
   <h2 class="text-2xl font-bold mb-10">Our Clients</h2>
   <div class="max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-5 gap-6 sm:gap-10">
-    <div class="client-card card-soft-blue">
-      <img src="https://hotelmanagementassets.s3.us-east-1.amazonaws.com/img/Eka-logo.svg" alt=""
-        class="w-full h-24 object-contain">
-    </div>
-    <div class="client-card card-soft-mint">
-      <img [src]="dummy_img" alt="" class="w-full h-24 object-cover">
-    </div>
-    <div class="client-card card-soft-rose">
-      <img src="https://chaandi.dharstec.com/assets/logo/chaandi-jewellry-logo.svg" alt=""
-        class="w-full h-24 object-contain">
-    </div>
-    <div class="client-card card-soft-blue">
-      <img [src]="dummy_img" alt="" class="w-full h-24 object-cover">
-    </div>
-    <div class="client-card card-soft-mint">
-      <img [src]="dummy_img" alt="" class="w-full h-24 object-cover">
-    </div>
+   <div class="w-[220px] h-[140px] flex items-center justify-center p-4 rounded-2xl overflow-hidden client-card card-soft-blue">
+  <img [src]="client1" alt="" class="w-full h-full object-contain">
+</div>
+
+<div class="w-[220px] h-[140px] flex items-center justify-center p-4 rounded-2xl overflow-hidden client-card card-soft-mint">
+  <img [src]="client2" alt="" class="w-full h-full object-contain">
+</div>
+
+<div class="w-[220px] h-[140px] flex items-center justify-center p-4 rounded-2xl overflow-hidden client-card card-soft-rose">
+  <img [src]="client3" alt="" class="w-full h-full object-contain">
+</div>
+
+<div class="w-[220px] h-[140px] flex items-center justify-center p-4 rounded-2xl overflow-hidden client-card card-soft-blue">
+  <img [src]="client4" alt="" class="w-full h-full object-contain">
+</div>
+
+<div class="w-[220px] h-[140px] flex items-center justify-center p-4 rounded-2xl overflow-hidden client-card card-soft-mint">
+  <img [src]="client5" alt="" class="w-full h-full object-contain">
+</div>
   </div>
 </section>
 <!-- ✦✦✦✦✦✦✦✦✦ SECTION: Our Clients End ✦✦✦✦✦✦✦✦✦ -->
@@ -416,15 +418,16 @@
 <section class="py-12 px-4 sm:px-6 lg:px-8 md:px-20">
   <div class="max-w-7xl mx-auto rounded-3xl p-[1px]"
     style="background: linear-gradient(135deg, rgba(79,70,229,.45), rgba(34,211,238,.28), rgba(79,70,229,.12));">
-    <div class="glass rounded-3xl py-12 px-6 sm:px-10">
+    <div class="partner-panel rounded-3xl py-12 px-6 sm:px-10">
       <div class="text-center">
-        <h2 class="text-lg sm:text-3xl font-extrabold section-title">Let’s build your next release</h2>
-        <p class="mt-3 text-gray-600 max-w-2xl mx-auto">
-          Tell us what you’re building—web, app, or internal tool—and we’ll suggest the fastest path to launch.
+         <h2 class="text-[30px] sm:text-5xl font-extrabold leading-tight text-white">
+            We’d Love to  <span class="text-sky-300">Work With You</span>
+          </h2>
+        <p class="mt-3 text-gray-600 max-w-4xl mx-auto text-white/90">
+         Big idea or small need, every project starts with a conversation. Reach out, and let’s see how we can bring your goals to life.
         </p>
         <div class="mt-6 flex justify-center gap-3 flex-wrap">
           <a routerLink="/contact-us" class="btn-primary">Contact Us</a>
-          <a routerLink="/portfolio" class="btn-ghost">View Work</a>
         </div>
       </div>
     </div>

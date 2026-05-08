@@ -1,6 +1,6 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 import { MaterialModule } from '../../shared/material-module';
-import { dummy_img } from '../../shared/globals'
+import { dummy_img, client1, client2, client3, client4, client5 } from '../../shared/globals'
 import { NgFor } from '@angular/common';
 import { RouterLink } from '@angular/router';
 @Component({
@@ -12,6 +12,11 @@ import { RouterLink } from '@angular/router';
 })
 export class Home {
   dummy_img = dummy_img;
+  client1 = client1;
+  client2 = client2;
+  client3 = client3;
+  client4 = client4;
+  client5 = client5;
   ourServices = [
     { img: dummy_img, icon: 'fa-computer', title: 'IT Services', descrption: 'End-to-end technology solutions that include development, support, and consulting to keep your business running smoothly.' },
     { img: dummy_img, icon: 'fa-mobile-screen-button', title: 'Product Development', descrption: 'From idea to launch, we build innovative digital products tailored to your business goals.' },

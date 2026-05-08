@@ -12,3 +12,10 @@ export const dummy_img_2 = 'https://i.pinimg.com/1200x/9d/5f/ea/9d5fea438a7e7f9d
 //Contact us
 export const contactus = 'images/contactus.svg';
 export const wcu = 'images/why-chooseus.jpg';
+
+//client logos
+export const client1 = 'images/clients/1.jpg';
+export const client2 = 'images/clients/2.jpg';
+export const client3 = 'images/clients/3.jpg';
+export const client4 = 'images/clients/4.jpg';
+export const client5 = 'images/clients/5.jpg';

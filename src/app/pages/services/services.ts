@@ -15,16 +15,56 @@ export class Services {
   dummy_img = dummy_img;
   user = user;
   wcu = wcu;
-  ourServices = [
-    { img: dummy_img, icon: 'fa-computer', title: 'Website Design & Development', descrption: 'Modern, responsive and high-performing websites crafted to represent your brand and engage your audience.' },
-    { img: dummy_img, icon: 'fa-mobile-screen-button', title: 'Software Development', descrption: 'Custom-built software solutions designed to automate operations and improve business efficiency.'},
-    { img: dummy_img, icon: 'fa-pen-ruler', title: 'Mobile App Development', descrption: 'Native and cross-platform mobile applications developed for performance, usability and growth.'},
-    { img: dummy_img, icon: 'fa-laptop', title: 'UI/UX Design', descrption: 'User-centric designs that combine creativity with functionality to deliver intuitive digital experiences.' },
-    { img: dummy_img, icon: 'fa-headset', title: 'Maintenance & Support', descrption: 'Continuous monitoring, updates and performance optimization to keep your systems running smoothly.' },
-    { img: dummy_img, icon: 'fa-users-gear', title: 'IT Consulting', descrption: 'Strategic consulting to align your IT systems, architecture and technology investments with business goals.' },
-    { img: dummy_img, icon: 'fa-cloud', title: 'Cloud Solutions', descrption: 'Comprehensive cloud setup, migration and management for improved scalability, flexibility, and security.' },
-    { img: dummy_img, icon: 'fa-diagram-project', title: 'Project Management & Monitoring', descrption: 'Comprehensive project planning, tracking and performance monitoring to ensure timely delivery, quality output and alignment with business objectives.' },
-  ]
+ourServices = [
+  {
+    img: dummy_img,
+    icon: 'fa-code',
+    title: 'Custom Software Development',
+    descrption: 'Scalable and secure software solutions tailored to streamline operations, automate workflows, and support business growth across industries.'
+  },
+  {
+    img: dummy_img,
+    icon: 'fa-robot',
+    title: 'AI Solutions & Automation',
+    descrption: 'Intelligent AI-powered systems including chatbots, workflow automation, predictive analytics, and custom AI integrations to improve efficiency and decision-making.'
+  },
+  {
+    img: dummy_img,
+    icon: 'fa-mobile-screen-button',
+    title: 'Mobile App Development',
+    descrption: 'High-performance Android, iOS, and cross-platform mobile applications designed for seamless user experience, scalability, and business impact.'
+  },
+  {
+    img: dummy_img,
+    icon: 'fa-globe',
+    title: 'Website Design & Development',
+    descrption: 'Modern, responsive, and conversion-focused websites crafted to strengthen your digital presence and engage your audience effectively.'
+  },
+  {
+    img: dummy_img,
+    icon: 'fa-pen-ruler',
+    title: 'UI/UX Design',
+    descrption: 'User-centric interface and experience design that combines creativity, usability, and functionality to deliver intuitive digital experiences.'
+  },
+  {
+    img: dummy_img,
+    icon: 'fa-cloud',
+    title: 'Cloud & DevOps Solutions',
+    descrption: 'Cloud infrastructure setup, deployment, migration, monitoring, and DevOps implementation for enhanced scalability, reliability, and security.'
+  },
+  {
+    img: dummy_img,
+    icon: 'fa-microchip',
+    title: 'IoT & Hardware Integration',
+    descrption: 'Smart hardware and IoT solutions including sensor integrations, device connectivity, embedded systems, and real-time monitoring platforms.'
+  },
+  {
+    img: dummy_img,
+    icon: 'fa-diagram-project',
+    title: 'IT Consulting & Project Management',
+    descrption: 'Strategic technology consulting, solution architecture, and end-to-end project management to ensure successful execution aligned with business objectives.'
+  }
+]
 
   status = [
     { label: 'Happy Clients', value: 100, count: 0, suffix: '+' },
