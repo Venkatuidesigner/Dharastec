@@ -27,7 +27,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v6
         with:
-          node-version: 22
+          node-version: 20
           cache: npm
 
       - name: Install dependencies
@@ -37,7 +37,7 @@ jobs:
         run: |
           node -v
           npm -v
-          npx ng version
+          npx ng version || true
 
       - name: Build Angular app
         run: npm run build -- --configuration production --base-href "/${{ github.event.repository.name }}/"
