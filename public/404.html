@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting…</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <script>
+      (function () {
+        // GitHub Pages doesn't support SPA deep links (direct /about, /services, refresh, etc.).
+        // This redirects all 404s to index.html while preserving the original path in query params.
+        //
+        // Base path detection:
+        // - Project Pages:  /<repo>/...
+        // - Custom domain: /...
+        var pathname = window.location.pathname || '/';
+        var segments = pathname.split('/').filter(Boolean);
+        var isProjectPages = window.location.hostname.endsWith('github.io') && segments.length > 0;
+        var base = isProjectPages ? '/' + segments[0] + '/' : '/';
+
+        var relative = pathname.slice(base.length);
+        var search = window.location.search ? window.location.search.slice(1) : '';
+        var redirectUrl =
+          base +
+          '?p=' +
+          encodeURIComponent('/' + relative) +
+          (search ? '&q=' + encodeURIComponent(search) : '') +
+          window.location.hash;
+
+        window.location.replace(redirectUrl);
+      })();
+    </script>
+  </body>
+</html>
