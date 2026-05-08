@@ -40,6 +40,8 @@ jobs:
           npx ng version || true
 
       - name: Build Angular app
+        env:
+          NODE_OPTIONS: --max_old_space_size=4096
         run: npm run build -- --configuration production --output-path dist/site --base-href "/${{ github.event.repository.name }}/"
 
       - name: Resolve publish directory

@@ -17,7 +17,6 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
-            "baseHref": "/Dharstec/",
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
@@ -33,6 +32,7 @@
           },
           "configurations": {
             "production": {
+              "baseHref": "/Dharstec-Solutions/",
               "budgets": [
                 {
                   "type": "initial",
@@ -57,6 +57,10 @@
         },
         "serve": {
           "builder": "@angular/build:dev-server",
+          "options": {
+            "host": "127.0.0.1",
+            "port": 4200
+          },
           "configurations": {
             "production": {
               "buildTarget": "Dharstec-solutions:build:production"
