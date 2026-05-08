@@ -17,27 +17,6 @@
     href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lavishly+Yours&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Tamil:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
     rel="stylesheet">
 
-  <!-- GitHub Pages SPA deep-link fix (paired with /404.html) -->
-  <script>
-    (function () {
-      try {
-        var params = new URLSearchParams(window.location.search);
-        var p = params.get('p');
-        if (p) {
-          var q = params.get('q');
-          var baseEl = document.querySelector('base');
-          var baseHref = (baseEl && baseEl.getAttribute('href')) || '/';
-          if (!baseHref.endsWith('/')) baseHref += '/';
-          // Ensure leading slash and avoid double slashes when joining.
-          if (!p.startsWith('/')) p = '/' + p;
-          var newPath = baseHref.replace(/\\/$/, '') + p;
-          var newUrl = newPath + (q ? ('?' + q) : '') + window.location.hash;
-          window.history.replaceState(null, '', newUrl);
-        }
-      } catch (_) {}
-    })();
-  </script>
-
 </head>
 
 <body>

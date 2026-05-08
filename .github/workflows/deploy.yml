@@ -64,7 +64,6 @@ jobs:
           echo "Publish dir root files:"
           ls -la "${publish_dir}" | head -n 50 || true
           test -f "${publish_dir}/index.html"
-          test -f "${publish_dir}/404.html"
 
           echo "Using publish_dir=${publish_dir}"
           echo "publish_dir=${publish_dir}" >> "${GITHUB_OUTPUT}"
