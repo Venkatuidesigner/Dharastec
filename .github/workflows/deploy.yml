@@ -33,8 +33,23 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Print tool versions
+        run: |
+          node -v
+          npm -v
+          npx ng version
+
       - name: Build Angular app
         run: npm run build -- --configuration production --base-href "/${{ github.event.repository.name }}/"
+
+      - name: Verify build output
+        run: |
+          echo "Repository name: ${{ github.event.repository.name }}"
+          echo "Expected publish dir: dist/Dharstec-solutions/browser"
+          ls -la
+          ls -la dist || true
+          find dist -maxdepth 4 -type d -print || true
+          test -d "dist/Dharstec-solutions/browser"
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
