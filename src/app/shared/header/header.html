@@ -48,15 +48,33 @@
 
   <!-- Mobile Overlay Menu -->
   <div
-    class="absolute top-[calc(100%+8px)] left-4 right-4 text-gray-900 shadow-lg transition-all duration-300 ease-in-out lg:hidden glass rounded-2xl"
+    class="absolute top-[calc(100%+8px)] left-4 right-4 text-gray-900 shadow-lg transition-all duration-300 ease-in-out lg:hidden glass rounded-2xl z-40"
     [ngClass]="{ 'block': mobileMenuOpen, 'hidden': !mobileMenuOpen }">
-    <nav class="flex flex-col p-4 space-y-3 text-base font-medium">
-      <a routerLink="/home" (click)="mobileMenuOpen=false"><i class="fa-solid fa-house"></i> Home</a>
-      <a routerLink="/about" (click)="mobileMenuOpen=false"><i class="fa-solid fa-building"></i> About Us</a>
-      <a routerLink="/services" (click)="mobileMenuOpen=false"><i class="fa-solid fa-layer-group"></i> Services</a>
-      <a routerLink="/portfolio" (click)="mobileMenuOpen=false"><i class="fa-solid fa-briefcase"></i> Portfolio</a>
-      <a routerLink="/contact-us" (click)="mobileMenuOpen=false"><i class="fa-solid fa-paper-plane"></i> Contact</a>
-      <a routerLink="/contact-us" (click)="mobileMenuOpen=false" class="btn-primary w-fit">Start Project</a>
+    <nav class="flex flex-col p-4 space-y-3 text-base font-medium  navitems">
+      <a routerLink="/home" routerLinkActive="active" (click)="mobileMenuOpen=false">
+        <i class="fa-solid fa-house"></i>
+        <span>Home</span>
+      </a>
+      <a routerLink="/about" routerLinkActive="active" (click)="mobileMenuOpen=false">
+        <i class="fa-solid fa-building"></i>
+        <span>About</span>
+      </a>
+      <a routerLink="/services" routerLinkActive="active" (click)="mobileMenuOpen=false">
+        <i class="fa-solid fa-layer-group"></i>
+        <span>Services</span>
+      </a>
+      <a routerLink="/portfolio" routerLinkActive="active" (click)="mobileMenuOpen=false">
+        <i class="fa-solid fa-briefcase"></i>
+        <span>Portfolio</span>
+      </a>
+      <a routerLink="/contact-us" routerLinkActive="active" (click)="mobileMenuOpen=false">
+        <i class="fa-solid fa-paper-plane"></i>
+        <span>Contact</span>
+      </a>
+      <a routerLink="/contact-us" class="btn-primary ml-2" (click)="mobileMenuOpen=false">
+        <i class="fa-solid fa-arrow-right"></i>
+        <span>Start Project</span>
+      </a>
     </nav>
   </div>
 </div>
