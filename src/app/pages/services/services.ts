@@ -2,9 +2,10 @@ import { Component } from '@angular/core';
 import { dummy_img, about_us, code, user, wcu } from '../../shared/globals'
 import { MaterialModule } from '../../shared/material-module';
 import { NgClass } from '@angular/common';
+import { RouterLink } from '@angular/router';
 @Component({
   selector: 'app-services',
-  imports: [MaterialModule],
+  imports: [MaterialModule, RouterLink],
   templateUrl: './services.html',
   styleUrl: './services.scss'
 })

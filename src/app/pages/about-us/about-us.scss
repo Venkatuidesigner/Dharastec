@@ -1,0 +1,71 @@
+.about-industry-card {
+  min-height: 250px;
+  padding: 26px;
+  overflow: hidden;
+  text-align: left;
+  border: 1px solid rgba(37, 99, 235, .14);
+  background:
+    linear-gradient(145deg, rgba(255,255,255,.98), rgba(239,246,255,.76));
+  box-shadow: 0 18px 48px rgba(15, 23, 42, .08);
+}
+
+.about-industry-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 5px;
+  background: linear-gradient(90deg, #38bdf8, #2563eb);
+}
+
+.about-industry-glow {
+  position: absolute;
+  right: -58px;
+  bottom: -70px;
+  width: 180px;
+  height: 180px;
+  border-radius: 999px;
+  background: radial-gradient(circle, rgba(37, 99, 235, .16), transparent 68%);
+  transition: transform .4s ease;
+}
+
+.about-industry-card:hover {
+  box-shadow: 0 26px 70px rgba(37, 99, 235, .16);
+}
+
+.about-industry-card:hover .about-industry-glow {
+  transform: scale(1.45);
+}
+
+.about-industry-icon {
+  position: relative;
+  z-index: 1;
+  width: 58px;
+  height: 58px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  color: #1d4ed8;
+  background: linear-gradient(135deg, #dbeafe, #e0f2fe);
+  box-shadow: 0 14px 30px rgba(37, 99, 235, .14);
+  font-size: 24px;
+  transition: transform .25s ease;
+}
+
+.about-industry-card:hover .about-industry-icon {
+  transform: translateY(-4px) rotate(-4deg);
+}
+
+.about-industry-index {
+  position: absolute;
+  top: -16px;
+  right: 0;
+  color: rgba(37, 99, 235, .16);
+  font-size: 42px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.about-feature-card h3 {
+  margin-top: 18px;
+}

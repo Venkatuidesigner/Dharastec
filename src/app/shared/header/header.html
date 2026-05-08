@@ -1,42 +1,62 @@
-<div class="w-full fixed top-0 left-0 z-50 px-4 sm:px-6 lg:px-8" id="header">
+<div class="w-full fixed top-0 left-0 z-50 px-3 sm:px-6 lg:px-8 py-3" id="header">
 
   <!-- Header -->
-  <header class="max-w-7xl mx-auto flex items-center justify-between  py-4 relative">
+  <header class="header-shell max-w-7xl mx-auto flex items-center justify-between py-2.5 px-3 sm:px-4 relative">
     <!-- Logo -->
-    <a routerLink="/" class="flex items-center text-2xl font-bold">
-      <img [src]="logo" class="w-40 h-auto" alt="Dharstec Solutions Logo">
-      <!-- <span class="text-[#000080] mr-2">Dharstec </span> Solutions -->
+    <a routerLink="/" class="flex items-center gap-3 text-2xl font-bold">
+      <img [src]="logo" class="w-36 sm:w-40 h-auto" alt="Dharstec Solutions Logo">
+      <span class="brand-subtitle hidden xl:inline text-sm font-semibold border-l pl-3 whitespace-nowrap">
+        Software Studio
+      </span>
     </a>
 
     <!-- Hamburger Button -->
     <button
-      class="inline-flex p-2 text-gray-700 rounded-lg lg:hidden hover:bg-gray-200 focus:outline-none"
+      class="mobile-toggle inline-flex p-2 rounded-lg lg:hidden focus:outline-none"
       (click)="mobileMenuOpen = !mobileMenuOpen">
       <mat-icon>{{ mobileMenuOpen ? 'close' : 'menu' }}</mat-icon>
     </button>
 
     <!-- Desktop Menu -->
-    <nav class="hidden lg:flex lg:items-center lg:space-x-2 navitems">
-      <a routerLink="/home" routerLinkActive="active">Home</a>
-      <a routerLink="/about" routerLinkActive="active">About Us</a>
-      <a routerLink="/services" routerLinkActive="active">Services</a>
-      <a routerLink="/portfolio" routerLinkActive="active">Portfolio</a>
-      <a routerLink="/contact-us" routerLinkActive="active">Contact</a>
-      <a routerLink="/contact-us" class="btn-primary ml-2">Get a Quote</a>
+    <nav class="hidden lg:flex lg:items-center lg:space-x-1 navitems">
+      <a routerLink="/home" routerLinkActive="active">
+        <i class="fa-solid fa-house"></i>
+        <span>Home</span>
+      </a>
+      <a routerLink="/about" routerLinkActive="active">
+        <i class="fa-solid fa-building"></i>
+        <span>About</span>
+      </a>
+      <a routerLink="/services" routerLinkActive="active">
+        <i class="fa-solid fa-layer-group"></i>
+        <span>Services</span>
+      </a>
+      <a routerLink="/portfolio" routerLinkActive="active">
+        <i class="fa-solid fa-briefcase"></i>
+        <span>Portfolio</span>
+      </a>
+      <a routerLink="/contact-us" routerLinkActive="active">
+        <i class="fa-solid fa-paper-plane"></i>
+        <span>Contact</span>
+      </a>
+      <a routerLink="/contact-us" class="btn-primary ml-2">
+        <i class="fa-solid fa-arrow-right"></i>
+        <span>Start Project</span>
+      </a>
     </nav>
   </header>
 
   <!-- Mobile Overlay Menu -->
   <div
-    class="absolute top-full left-0 w-full text-gray-900 shadow-lg transition-all duration-300 ease-in-out lg:hidden glass"
+    class="absolute top-[calc(100%+8px)] left-4 right-4 text-gray-900 shadow-lg transition-all duration-300 ease-in-out lg:hidden glass rounded-2xl"
     [ngClass]="{ 'block': mobileMenuOpen, 'hidden': !mobileMenuOpen }">
     <nav class="flex flex-col p-4 space-y-3 text-base font-medium">
-      <a routerLink="/home" (click)="mobileMenuOpen=false">Home</a>
-      <a routerLink="/about" (click)="mobileMenuOpen=false">About Us</a>
-      <a routerLink="/services" (click)="mobileMenuOpen=false">Services</a>
-      <a routerLink="/portfolio" (click)="mobileMenuOpen=false">Portfolio</a>
-      <a routerLink="/contact-us" (click)="mobileMenuOpen=false">Contact</a>
-      <a routerLink="/contact-us" (click)="mobileMenuOpen=false" class="btn-primary w-fit">Get a Quote</a>
+      <a routerLink="/home" (click)="mobileMenuOpen=false"><i class="fa-solid fa-house"></i> Home</a>
+      <a routerLink="/about" (click)="mobileMenuOpen=false"><i class="fa-solid fa-building"></i> About Us</a>
+      <a routerLink="/services" (click)="mobileMenuOpen=false"><i class="fa-solid fa-layer-group"></i> Services</a>
+      <a routerLink="/portfolio" (click)="mobileMenuOpen=false"><i class="fa-solid fa-briefcase"></i> Portfolio</a>
+      <a routerLink="/contact-us" (click)="mobileMenuOpen=false"><i class="fa-solid fa-paper-plane"></i> Contact</a>
+      <a routerLink="/contact-us" (click)="mobileMenuOpen=false" class="btn-primary w-fit">Start Project</a>
     </nav>
   </div>
 </div>

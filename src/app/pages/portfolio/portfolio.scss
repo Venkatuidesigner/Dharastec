@@ -1,13 +1,178 @@
 .custom-active-tab {
+    flex-wrap: wrap;
+
     a {
         padding: 10px 20px;
-        background-color: #929090;
+        background: #ffffff;
+        border: 1px solid rgba(37, 99, 235, .14);
+        color: #334155;
         border-radius: 50px;
         cursor: pointer;
+        font-weight: 700;
+        transition: all .2s ease;
 
         &.active-filter {
-            background-color: #000;
+            background: linear-gradient(135deg, #1d4ed8, #0284c7);
             color: #ffffff;
+            box-shadow: 0 12px 30px rgba(37, 99, 235, .22);
         }
     }
+}
+
+.portfolio-card {
+    overflow: hidden;
+    text-align: left;
+    border: 1px solid rgba(37, 99, 235, .14);
+    background: #ffffff;
+    box-shadow: 0 18px 48px rgba(15, 23, 42, .08);
+}
+
+.portfolio-card:hover {
+    box-shadow: 0 28px 76px rgba(37, 99, 235, .16);
+}
+
+.portfolio-image-wrap {
+    position: relative;
+    height: 245px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #dbeafe, #f0f9ff);
+}
+
+.portfolio-image-overlay {
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(180deg, transparent 30%, rgba(15, 23, 42, .56)),
+        radial-gradient(circle at 20% 0%, rgba(56, 189, 248, .22), transparent 42%);
+    opacity: .7;
+}
+
+.portfolio-chip {
+    position: absolute;
+    left: 16px;
+    bottom: 16px;
+    border-radius: 999px;
+    padding: 8px 12px;
+    color: #fff;
+    background: rgba(15, 23, 42, .62);
+    border: 1px solid rgba(255,255,255,.22);
+    backdrop-filter: blur(10px);
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.portfolio-card-content {
+    padding: 22px;
+}
+
+.portfolio-service-card {
+    min-height: 318px;
+    padding: 26px;
+    overflow: hidden;
+    text-align: left;
+    border: 1px solid rgba(37, 99, 235, .14);
+    background: linear-gradient(145deg, #ffffff, #eef6ff);
+    box-shadow: 0 18px 48px rgba(15, 23, 42, .08);
+    isolation: isolate;
+}
+
+.portfolio-service-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background: linear-gradient(135deg, #1d4ed8, #0284c7);
+    opacity: 0;
+    transition: opacity .32s ease;
+}
+
+.portfolio-service-card:hover::before {
+    opacity: 1;
+}
+
+.portfolio-service-card .service-card-shine {
+    position: absolute;
+    right: -60px;
+    top: -70px;
+    z-index: 1;
+    width: 190px;
+    height: 190px;
+    border-radius: 999px;
+    background: radial-gradient(circle, rgba(255,255,255,.38), transparent 68%);
+    opacity: .55;
+    transition: transform .35s ease;
+}
+
+.portfolio-service-card:hover .service-card-shine {
+    transform: scale(1.35);
+}
+
+.portfolio-service-card .service-page-icon {
+    width: 60px;
+    height: 60px;
+    display: grid;
+    place-items: center;
+    border-radius: 22px;
+    color: #1d4ed8;
+    background: linear-gradient(135deg, #dbeafe, #e0f2fe);
+    box-shadow: 0 14px 30px rgba(37, 99, 235, .14);
+    font-size: 24px;
+    transition: all .25s ease;
+}
+
+.portfolio-service-card:hover .service-page-icon {
+    color: #fff;
+    background: rgba(255,255,255,.16);
+    transform: rotate(-5deg) scale(1.06);
+}
+
+.portfolio-service-card .service-page-badge {
+    color: rgba(37, 99, 235, .2);
+    font-size: 34px;
+    font-weight: 900;
+    line-height: 1;
+    transition: color .25s ease;
+}
+
+.portfolio-service-card:hover .service-page-badge {
+    color: rgba(255,255,255,.28);
+}
+
+.portfolio-service-card .service-page-arrow {
+    width: 42px;
+    height: 42px;
+    display: grid;
+    place-items: center;
+    margin-top: 28px;
+    border-radius: 999px;
+    color: #fff;
+    background: linear-gradient(135deg, #1d4ed8, #0284c7);
+    box-shadow: 0 14px 30px rgba(37, 99, 235, .2);
+    transition: all .25s ease;
+}
+
+.portfolio-service-card:hover .service-page-arrow {
+    color: #1d4ed8;
+    background: #fff;
+    transform: translateX(5px);
+}
+
+.portfolio-service-card:nth-child(5n + 1) {
+    border-color: rgba(37, 99, 235, .16);
+}
+
+.portfolio-service-card:nth-child(5n + 2) {
+    border-color: rgba(14, 165, 233, .20);
+}
+
+.portfolio-service-card:nth-child(5n + 3) {
+    border-color: rgba(2, 132, 199, .18);
+}
+
+.portfolio-service-card:nth-child(5n + 4) {
+    border-color: rgba(79, 70, 229, .16);
+}
+
+.portfolio-service-card:nth-child(5n + 5) {
+    border-color: rgba(59, 130, 246, .18);
 }
