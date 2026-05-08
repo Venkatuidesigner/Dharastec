@@ -1,20 +1,22 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 import { MaterialModule } from '../../shared/material-module';
-import { dummy_img, dummy_img_1, user, about_us, code } from '../../shared/globals'
+import { dummy_img, client1, client2, client3, client4, client5 } from '../../shared/globals'
 import { NgFor } from '@angular/common';
+import { RouterLink } from '@angular/router';
 @Component({
   selector: 'app-home',
-  imports: [MaterialModule, NgFor],
+  imports: [MaterialModule, NgFor, RouterLink],
   templateUrl: './home.html',
   styleUrl: './home.scss',
   encapsulation: ViewEncapsulation.None
 })
 export class Home {
   dummy_img = dummy_img;
-  dummy_img_1 = dummy_img_1;
-  user = user;
-  about_us = about_us;
-  code = code;
+  client1 = client1;
+  client2 = client2;
+  client3 = client3;
+  client4 = client4;
+  client5 = client5;
   ourServices = [
     { img: dummy_img, icon: 'fa-computer', title: 'IT Services', descrption: 'End-to-end technology solutions that include development, support, and consulting to keep your business running smoothly.' },
     { img: dummy_img, icon: 'fa-mobile-screen-button', title: 'Product Development', descrption: 'From idea to launch, we build innovative digital products tailored to your business goals.' },

@@ -1,0 +1,213 @@
+.contact-hero-card {
+  transform: translateY(8px);
+}
+
+.contact-proof {
+  transition: transform .24s ease, border-color .24s ease, background .24s ease;
+}
+
+.contact-proof:hover {
+  transform: translateX(6px);
+  border-color: rgba(125, 211, 252, .38);
+  background: rgba(255, 255, 255, .12);
+}
+
+.contact-flow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-top: 4px;
+  padding: 16px;
+  border: 1px solid rgba(191, 219, 254, .16);
+  border-radius: 20px;
+  color: #dbeafe;
+  background: rgba(255, 255, 255, .07);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.contact-flow i {
+  color: #7dd3fc;
+  font-size: 11px;
+}
+
+.contact-info-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-info-card::after {
+  content: "";
+  position: absolute;
+  right: -42px;
+  bottom: -52px;
+  width: 130px;
+  height: 130px;
+  border-radius: 999px;
+  background: radial-gradient(circle, rgba(37, 99, 235, .14), transparent 68%);
+  transition: transform .35s ease;
+}
+
+.contact-info-card:hover::after {
+  transform: scale(1.45);
+}
+
+.contact-side-panel,
+.contact-form-card {
+  height: 100%;
+  box-shadow: 0 24px 70px rgba(15, 23, 42, .08);
+}
+
+.contact-side-panel {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-side-panel > .relative {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.contact-form-shell {
+  height: 100%;
+}
+
+.contact-form-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form-card form {
+  flex: 1;
+}
+
+.contact-visual {
+  position: relative;
+  flex: 1;
+  min-height: 360px;
+  display: grid;
+  place-items: center;
+  border-radius: 28px;
+  background:
+    radial-gradient(circle, rgba(56, 189, 248, .16), transparent 54%),
+    linear-gradient(135deg, rgba(239, 246, 255, .92), rgba(224, 242, 254, .7));
+  border: 1px solid rgba(37, 99, 235, .12);
+  overflow: hidden;
+}
+
+.contact-visual::before,
+.contact-visual::after {
+  content: "";
+  position: absolute;
+  border-radius: 999px;
+  border: 1px dashed rgba(37, 99, 235, .22);
+  animation: contactSpin 18s linear infinite;
+}
+
+.contact-visual::before {
+  width: 260px;
+  height: 260px;
+}
+
+.contact-visual::after {
+  width: 185px;
+  height: 185px;
+  animation-direction: reverse;
+  animation-duration: 24s;
+}
+
+.contact-visual-core {
+  position: relative;
+  z-index: 2;
+  width: 170px;
+  height: 170px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  border-radius: 34px;
+  color: #fff;
+  background: linear-gradient(135deg, #1d4ed8, #0284c7);
+  box-shadow: 0 22px 55px rgba(37, 99, 235, .24);
+  animation: contactFloat 5.5s ease-in-out infinite;
+}
+
+.contact-visual-core i {
+  font-size: 34px;
+}
+
+.contact-visual-core span {
+  max-width: 110px;
+  font-weight: 900;
+  line-height: 1.15;
+}
+
+.contact-visual-card {
+  position: absolute;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 112px;
+  padding: 12px 14px;
+  border: 1px solid rgba(37, 99, 235, .14);
+  border-radius: 18px;
+  color: #0f172a;
+  background: rgba(255, 255, 255, .82);
+  box-shadow: 0 18px 38px rgba(15, 23, 42, .1);
+  backdrop-filter: blur(12px);
+  font-weight: 900;
+  animation: contactFloat 5s ease-in-out infinite;
+}
+
+.contact-visual-card i {
+  color: #2563eb;
+}
+
+.contact-visual-card-one {
+  top: 44px;
+  left: 28px;
+}
+
+.contact-visual-card-two {
+  top: 92px;
+  right: 22px;
+  animation-delay: -1.5s;
+}
+
+.contact-visual-card-three {
+  bottom: 42px;
+  left: 42px;
+  animation-delay: -2.6s;
+}
+
+.contact-form-shell {
+  box-shadow: 0 24px 70px rgba(37, 99, 235, .1);
+}
+
+.contact-input {
+  width: 100%;
+  margin-top: 8px;
+  border-radius: 18px;
+  padding: 13px 16px;
+  background: rgba(255, 255, 255, .86);
+  border: 1px solid rgba(148, 163, 184, .28);
+  outline: none;
+  transition: border-color .2s ease, box-shadow .2s ease, background .2s ease;
+}
+
+.contact-input:focus {
+  background: #fff;
+  border-color: rgba(37, 99, 235, .42);
+  box-shadow: 0 0 0 5px rgba(37, 99, 235, .12);
+}
+
+@keyframes contactSpin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes contactFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-9px); }
+}

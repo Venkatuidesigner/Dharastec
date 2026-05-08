@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { dummy_img } from '../../shared/globals'
 import { NgClass, NgFor } from '@angular/common';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-portfolio',
-  imports: [NgClass, NgFor],
+  imports: [NgClass, NgFor, RouterLink],
   templateUrl: './portfolio.html',
   styleUrl: './portfolio.scss'
 })
