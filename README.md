@@ -1,4 +1,4 @@
-# Dharastec Solutions
+# Dharstec Solutions
 
 ## 🚀 Deployment Guide
 
@@ -24,7 +24,7 @@ The GitHub Actions workflow automatically deploys your site whenever you push to
    - Build the Angular application
    - Deploy to GitHub Pages automatically
 
-3. Your site will be available at: **https://Venkatuidesigner.github.io/Dharastec**
+3. Your site will be available at: **https://Venkatuidesigner.github.io/Dharstec**
 
 #### Manual Deployment
 
@@ -39,21 +39,21 @@ To manually deploy using the CLI:
 
 #### GitHub Pages Configuration
 
-1. Go to your repository settings: https://github.com/Venkatuidesigner/Dharastec/settings/pages
+1. Go to your repository settings: https://github.com/Venkatuidesigner/Dharstec/settings/pages
 2. Under "Build and deployment", select **GitHub Actions**
 3. Save the settings
 
 #### Workflow Status
 
 Monitor your deployments:
-- Visit: https://github.com/Venkatuidesigner/Dharastec/actions
+- Visit: https://github.com/Venkatuidesigner/Dharstec/actions
 - Check the workflow runs and see deployment status
 
 #### Troubleshooting
 
 - **Build fails**: Check the workflow logs in GitHub Actions
 - **Site not updating**: Clear your browser cache or wait a few minutes for GitHub Pages to sync
-- **404 errors on routes**: Ensure base href is set correctly (`/Dharastec/` in angular.json)
+- **404 errors on routes**: Ensure base href is set correctly (`/Dharstec/` in angular.json)
 
 #### Environment Variables
 
@@ -61,5 +61,5 @@ The workflow uses GitHub's default `GITHUB_TOKEN` for authentication. No additio
 
 ---
 
-**Repository:** https://github.com/Venkatuidesigner/Dharastec  
-**Live Site:** https://Venkatuidesigner.github.io/Dharastec
+**Repository:** https://github.com/Venkatuidesigner/Dharstec  
+**Live Site:** https://Venkatuidesigner.github.io/Dharstec
