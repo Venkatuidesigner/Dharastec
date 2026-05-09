@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
 import { client1, client2, client3, client4, client5, dummy_img, user } from '../../shared/globals'
 import { MaterialModule } from '../../shared/material-module';
-import { NgFor } from '@angular/common';
 import { RouterLink } from '@angular/router';
 @Component({
   selector: 'app-about-us',
-  imports: [MaterialModule, NgFor, RouterLink],
+  imports: [MaterialModule, RouterLink],
   templateUrl: './about-us.html',
   styleUrl: './about-us.scss'
 })
