@@ -353,6 +353,101 @@ body { margin: 0; }
   .soft-shadow { box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08); }
   .floaty { animation: floaty 6s ease-in-out infinite; }
 
+  .client-showcase-card {
+    position: relative;
+    min-height: 186px;
+    overflow: hidden;
+    border: 1px solid rgba(37, 99, 235, .14);
+    border-radius: 28px;
+    background: linear-gradient(145deg, rgba(255,255,255,.98), rgba(239,246,255,.78));
+    box-shadow: 0 18px 48px rgba(15, 23, 42, .08);
+    text-align: left;
+    transition: transform .28s ease, box-shadow .28s ease, border-color .28s ease;
+  }
+
+  .client-showcase-card::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto;
+    height: 5px;
+    background: linear-gradient(90deg, #38bdf8, #2563eb);
+  }
+
+  .client-showcase-card::after {
+    content: "";
+    position: absolute;
+    right: -72px;
+    bottom: -84px;
+    width: 190px;
+    height: 140px;
+    border-radius: 999px;
+    background: radial-gradient(circle, rgba(37, 99, 235, .14), transparent 68%);
+    transition: transform .35s ease;
+  }
+
+  .client-showcase-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(37, 99, 235, .24);
+    box-shadow: 0 28px 76px rgba(37, 99, 235, .16);
+  }
+
+  .client-showcase-card:hover::after {
+    transform: scale(1.42);
+  }
+
+  .client-logo-wrap {
+    position: relative;
+    z-index: 1;
+    height: 118px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 22px 22px 0;
+    padding: 18px;
+    border: 1px solid rgba(148, 163, 184, .18);
+    border-radius: 22px;
+    background: rgba(255, 255, 255, .78);
+  }
+
+  .client-logo-wrap img {
+    max-width: 100%;
+    max-height: 78px;
+    object-fit: contain;
+  }
+
+  .client-card-body {
+    position: relative;
+    z-index: 1;
+    padding: 20px 22px 24px;
+  }
+
+  .client-card-body span {
+    display: inline-flex;
+    border-radius: 999px;
+    padding: 6px 10px;
+    color: #009688;
+    // background: rgba(37, 99, 235, .08);
+    font-size: 13px;
+    font-weight: 800;
+    font-family: lato;
+    // letter-spacing: .06em;
+    // text-transform: uppercase;
+  }
+
+  .client-card-body h3 {
+    margin-top: 12px;
+    color: #0f172a;
+    font-size: 17px;
+    font-weight: 900;
+  }
+
+  .client-card-body p {
+    margin-top: 8px;
+    color: #64748b;
+    font-size: 13px;
+    line-height: 1.55;
+  }
+
   .center-last-row {
     grid-auto-flow: row;
     place-items: center;

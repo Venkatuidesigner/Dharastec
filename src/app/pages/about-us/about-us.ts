@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { dummy_img, user } from '../../shared/globals'
+import { client1, client2, client3, client4, client5, dummy_img, user } from '../../shared/globals'
 import { MaterialModule } from '../../shared/material-module';
 import { NgFor } from '@angular/common';
 import { RouterLink } from '@angular/router';
@@ -12,6 +12,13 @@ import { RouterLink } from '@angular/router';
 export class AboutUs {
   dummy_img = dummy_img;
   user = user;
+  clientPartners = [
+    { logo: client1, name: 'Eka Lyf', type: 'Hospitality Platform', desc: 'Booking and operations experience for hospitality teams.' },
+    { logo: client2, name: 'Asset Management', type: 'Business System', desc: 'Internal workflows and asset tracking made simpler.' },
+    { logo: client3, name: 'Chaandi Jewellery', type: 'Retail Website', desc: 'Digital storefront experience for a modern jewellery brand.' },
+    { logo: client4, name: 'Transport Operations', type: 'GovTech Workflow', desc: 'Compliance and process systems for transport operations.' },
+    { logo: client5, name: 'SME Solutions', type: 'Startup Support', desc: 'Affordable websites and automation for growing businesses.' },
+  ];
   ourServices = [
     { icon: 'fa-computer', title: 'IT Services', descrption: 'End-to-end technology solutions that include development, support, and consulting to keep your business running smoothly.' },
     { icon: 'fa-mobile-screen-button', title: 'Product Development', descrption: 'From idea to launch, we build innovative digital products tailored to your business goals.' },

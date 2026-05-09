@@ -1,6 +1,6 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 import { MaterialModule } from '../../shared/material-module';
-import { dummy_img, client1, client2, client3, client4, client5 } from '../../shared/globals'
+import { dummy_img, client1, client2, client3, client4, client5, client7, client6 } from '../../shared/globals'
 import { NgFor } from '@angular/common';
 import { RouterLink } from '@angular/router';
 @Component({
@@ -17,6 +17,18 @@ export class Home {
   client3 = client3;
   client4 = client4;
   client5 = client5;
+  client6 = client6;
+  client7 = client7;
+  clientPartners = [
+    { logo: client1, name: 'Tamilnadu Forest Department'},
+    { logo: client2, name: 'Tamilnadu Housing Board Department'},
+    { logo: client7, name: 'Tamilnadu Department of Social Welfare and Women Empowerment'},
+    { logo: client3, name: 'Tamilnadu Department of Children Welfare and Special Services'},
+    { logo: client6, name: 'Tamilnadu Commissionerate of Transport and Road Safety'},
+    { logo: client6, name: 'Tamilnadu Department of Geology and Mining'},
+    { logo: client4, name: 'Tamilnadu Department of Agricultural Marketing and Agri Business'},
+    { logo: client5, name: 'Tamilnadu Directorate of Agriculture'},
+  ];
   ourServices = [
     { img: dummy_img, icon: 'fa-computer', title: 'IT Services', descrption: 'End-to-end technology solutions that include development, support, and consulting to keep your business running smoothly.' },
     { img: dummy_img, icon: 'fa-mobile-screen-button', title: 'Product Development', descrption: 'From idea to launch, we build innovative digital products tailored to your business goals.' },
@@ -49,5 +61,10 @@ export class Home {
       role: 'Operations Head, GroTech India',
       feedback: 'They delivered our app ahead of schedule, with flawless execution. Their process is clear, collaborative, and efficient. Highly recommended!'
     }
+  ];
+  status = [
+    { label: 'Companies Served', value: 10, count: 0, suffix: '+', icon: 'fa-building' },
+    { label: 'Projects Delivered', value: 40, count: 0, suffix: '+', icon: 'fa-diagram-project' },
+    { label: 'Users Supported', value: 5000, count: 0, suffix: '+', icon: 'fa-users' },
   ];
 }
