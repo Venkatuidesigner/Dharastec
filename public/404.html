@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dharstec Solutions</title>
+    <script>
+      const pathSegmentsToKeep = 1;
+      const basePath = window.location.pathname
+        .split('/')
+        .slice(0, 1 + pathSegmentsToKeep)
+        .join('/');
+      const routePath = window.location.pathname
+        .slice(1)
+        .split('/')
+        .slice(pathSegmentsToKeep)
+        .join('/');
+      window.location.replace(
+        `${window.location.origin}${basePath}/?/${routePath}${window.location.search}${window.location.hash}`
+      );
+    </script>
+  </head>
+  <body></body>
+</html>
