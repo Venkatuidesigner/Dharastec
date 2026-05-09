@@ -19,3 +19,5 @@ export const client2 = 'images/clients/2.jpg';
 export const client3 = 'images/clients/3.jpg';
 export const client4 = 'images/clients/4.jpg';
 export const client5 = 'images/clients/5.jpg';
+export const client6 = 'images/clients/6.jpg';
+export const client7 = 'images/clients/7.jpg';

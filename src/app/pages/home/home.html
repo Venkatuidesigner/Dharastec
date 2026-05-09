@@ -155,31 +155,54 @@
 <section class="py-10 sm:py-16 text-center section-peach px-4 sm:px-6 lg:px-8">
 
   <p class="agency-eyebrow light mx-auto mb-3">Trusted By Teams</p>
-  <h2 class="text-2xl font-bold mb-10">Our Clients</h2>
-  <div class="max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-5 gap-6 sm:gap-10">
-   <div class="w-[220px] h-[140px] flex items-center justify-center p-4 rounded-2xl overflow-hidden client-card card-soft-blue">
-  <img [src]="client1" alt="" class="w-full h-full object-contain">
-</div>
-
-<div class="w-[220px] h-[140px] flex items-center justify-center p-4 rounded-2xl overflow-hidden client-card card-soft-mint">
-  <img [src]="client2" alt="" class="w-full h-full object-contain">
-</div>
-
-<div class="w-[220px] h-[140px] flex items-center justify-center p-4 rounded-2xl overflow-hidden client-card card-soft-rose">
-  <img [src]="client3" alt="" class="w-full h-full object-contain">
-</div>
-
-<div class="w-[220px] h-[140px] flex items-center justify-center p-4 rounded-2xl overflow-hidden client-card card-soft-blue">
-  <img [src]="client4" alt="" class="w-full h-full object-contain">
-</div>
-
-<div class="w-[220px] h-[140px] flex items-center justify-center p-4 rounded-2xl overflow-hidden client-card card-soft-mint">
-  <img [src]="client5" alt="" class="w-full h-full object-contain">
-</div>
+  <h2 class="text-2xl sm:text-4xl font-extrabold mb-3 section-title">Our Clients</h2>
+  <p class="max-w-2xl mx-auto text-slate-600 mb-10">
+    Brands and teams who trusted us to design, build, and support practical digital products.
+  </p>
+  <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+    @for (client of clientPartners; track $index) {
+    <div class="client-showcase-card">
+      <div class="client-logo-wrap">
+        <img [src]="client.logo" [alt]="client.name" />
+      </div>
+      <div class="client-card-body text-center">
+        <span class="text-lato">{{ client.name }}</span>
+        <!-- <h3>{{ client.name }}</h3> -->
+      </div>
+    </div>
+    }
   </div>
 </section>
 <!-- ✦✦✦✦✦✦✦✦✦ SECTION: Our Clients End ✦✦✦✦✦✦✦✦✦ -->
 
+<!-- ✦✦✦✦✦✦✦✦✦ SECTION: Industries We Serve START ✦✦✦✦✦✦✦✦✦ -->
+<section class="home-stats-section py-12 sm:py-24 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid lg:grid-cols-[.85fr_1.15fr] gap-8 lg:gap-12 items-center">
+      <div>
+        <p class="agency-eyebrow light mb-4">Impact in Numbers</p>
+        <h2 class="text-3xl sm:text-5xl font-extrabold leading-tight text-white">
+          Built for measurable digital progress.
+        </h2>
+        <p class="mt-5 text-blue-100 text-base sm:text-lg">
+          A quick snapshot of the teams, products, and users supported through practical software delivery.
+        </p>
+      </div>
+      <div class="grid gap-5 sm:grid-cols-3">
+      @for (item of status; track $index) {
+      <div class="home-stat-card group">
+        <div class="home-stat-icon">
+          <i class="fa-solid {{item.icon}}"></i>
+        </div>
+        <div class="home-stat-value">{{item.value}}{{item.suffix}}</div>
+        <p>{{item.label}}</p>
+        <div class="home-stat-line"></div>
+      </div>
+      }
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- ✦✦✦✦✦✦✦✦✦ SECTION: We Offer Best IT Services START ✦✦✦✦✦✦✦✦✦ -->
 <section class="section-mist py-10 sm:py-20 px-4 sm:px-6 lg:px-8">
@@ -226,7 +249,7 @@
 <!-- ✦✦✦✦✦✦✦✦✦ SECTION: We Offer Best IT Services END ✦✦✦✦✦✦✦✦✦ -->
 
 <!-- ✦✦✦✦✦✦✦✦✦ SECTION: We Make Digital Work Better START ✦✦✦✦✦✦✦✦✦ -->
-<section class="section-mint py-10 sm:py-20 px-4 sm:px-6 lg:px-8">
+<section class="section-mint py-10 sm:py-20 px-4 sm:px-6 lg:px-8 hidden">
   <div class="max-w-7xl mx-auto ">
     <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-8">
       <div>
@@ -376,7 +399,6 @@
   </div>
 </section>
 <!-- ✦✦✦✦✦✦✦✦✦ SECTION: Easy Solution for Difficult IT Problems END ✦✦✦✦✦✦✦✦✦ -->
-
 
 <!-- ✦✦✦✦✦✦✦✦✦ SECTION: Customer Feedback START ✦✦✦✦✦✦✦✦✦ -->
 <section class="py-12 px-4 sm:px-6 lg:px-8 md:px-20 section-mist">
