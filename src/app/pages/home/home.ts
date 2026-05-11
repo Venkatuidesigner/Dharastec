@@ -32,17 +32,17 @@ export class Home {
   ourServices = [
     { img: dummy_img, icon: 'fa-computer', title: 'IT Services', descrption: 'End-to-end technology solutions that include development, support, and consulting to keep your business running smoothly.' },
     { img: dummy_img, icon: 'fa-mobile-screen-button', title: 'Product Development', descrption: 'From idea to launch, we build innovative digital products tailored to your business goals.' },
-    { img: dummy_img, icon: 'fa-pen-ruler', title: 'Creative Designing', descrption: 'Modern, user-friendly designs that blend creativity with functionality to enhance user experience.' },
+    { img: dummy_img, icon: 'fa-pen-ruler', title: 'IoT & Hardware', descrption: 'Smart hardware and IoT solutions enabling connectivity, automation, monitoring, and seamless system integration.' },
     { img: dummy_img, icon: 'fa-laptop', title: 'Flexible Engagement', descrption: 'Hire us your way — choose a complete project package or hourly-based hiring that fits your needs.' },
   ]
 
   features = [
     { title: 'Custom IT Solutions', desc: 'Tailored strategies and systems built around your unique business needs.', icon: 'fa-network-wired', class:'!bg-red-100' },
-    { title: 'End-to-End Support', desc: 'From ideation to post-launch — we stay with you through every phase.', icon: 'fa-ticket', class:'!bg-gray-200' },
-    { title: 'Faster Delivery', desc: 'Agile methods and optimized workflows mean quicker time to market.', icon: 'fa-globe', class:'!bg-orange-100' },
+    { title: 'End-to-End Support', desc: 'From ideation to post-launch, we stay with you through every phase.', icon: 'fa-ticket', class:'!bg-gray-200' },
+    { title: 'Faster Delivery', desc: 'Agile methods and optimized workflows mean quicker time to delivery.', icon: 'fa-globe', class:'!bg-orange-100' },
     { title: 'Scalable Technology', desc: 'Solutions designed to grow with your business and evolving goals.', icon: 'fa-server', class:'!bg-sky-100' },
-    { title: 'Transparent Communication', desc: 'We keep you informed and involved at every step — no guesswork.', icon: 'fa-comments', class:'!bg-pink-100' },
-    { title: 'Client-First Approach', desc: 'We align our process with your success metrics — not just deliverables.', icon: 'fa-users', class:'!bg-cyan-100' },
+    { title: 'Transparent Communication', desc: 'We keep you informed and involved at every step, no guesswork.', icon: 'fa-comments', class:'!bg-pink-100' },
+    { title: 'Client-First Approach', desc: 'We align our process with your success metrics, not just deliverables.', icon: 'fa-users', class:'!bg-cyan-100' },
   ];
 
   testimonials = [
